@@ -12,6 +12,7 @@
 * 10:29: cannot run both api/client in same repo, testing failed
 * 11:11: attempting to combine api/client in test project. close
 * 11:23: Successfully combined API & Client to a single .Solution project and launched interface!
+* 12:59: Looking into embedding location based google maps for each host
 
 ## Technologies Used
 
