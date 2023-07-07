@@ -20,6 +20,7 @@
 * 3:26: Create initial Host database in MySQL
 * 3:49: Building seed database model
 * 3:55: updating README fields
+* 4:15: research authentication and user roles
 
 ## Technologies Used
 
