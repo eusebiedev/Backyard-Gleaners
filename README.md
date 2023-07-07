@@ -5,8 +5,8 @@
 ## Description
 
 ## Research & Planning Log:
-
-
+Friday 7/7
+* 8:42: researching combining api/client to one repo
 
 ## Technologies Used
 
