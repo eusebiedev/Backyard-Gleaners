@@ -21,6 +21,7 @@
 * 3:49: Building seed database model
 * 3:55: updating README fields
 * 4:15: research authentication and user roles
+* 4:45: Fix corrupted API directory
 
 ## Technologies Used
 
