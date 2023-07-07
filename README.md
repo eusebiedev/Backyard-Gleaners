@@ -16,6 +16,7 @@
 * 1:28: Successfully embed custom location based google map on profile view in tests
 * 1:56: Researching creating a full independent map view with each host pinned, click pin to go to details
 * 2:39: Building initial host Model.cs
+* 2:53: Working on Capstone Proposal file
 
 ## Technologies Used
 
