@@ -18,20 +18,23 @@
 * MVC Client Front End
 * .NET, ASP.NET Core
 * EF Core Migrations
+* Swagger
+* HTML, CSS, Bootstrap
 * Authentication with Identity
+* Google MyMaps
 
 ## If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
 * Section for Gleaners to leave Reviews/Comments for Hosts
 * API Versioning
-* Calendar Integration page
+* Calendar Integration page for Hosts
 * Host app on Azure or other
 * Searchable View for API database
 * Donation Form
+* Theme Switcher
 
 ## What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
-* Bootstrap
-* Microsoft Account
-* Google Maps/Calender Integration or API
+* Microsoft Account for Azure integration
+* Google Calender Integration or API
 * Paypal integration for Donation form
 
 ## Is there anything else you'd like your instructor to know?

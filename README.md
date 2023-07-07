@@ -2,7 +2,7 @@
 
 ### By Eusebie Siebenberg
 
-#### Independent Capstone Project @ Epicodus. A Gleaners App built around a custom API and MVC Client Front End.
+#### Independent Capstone Project @ Epicodus. A Gleaners App built around a custom API and MVC Client Front End, with Google Maps integration, user account creation.
 
 ### Research & Planning Log:
 #### Friday 7/7
@@ -18,14 +18,37 @@
 * 2:39: Building initial host Model.cs
 * 2:53: Working on Capstone Proposal file
 * 3:26: Create initial Host database in MySQL
+* 3:49: Building seed database model
+* 3:55: updating README fields
 
 ## Technologies Used
 
+* C#
+* .NET
+* ASP.NET CORE
+* Authentication
+* Identity
+* MVC API Client Front End
+* Entity Framework Core
+* EF Core Migrations
+* Swashbuckle
+* Swagger
+* MySQL
+* Rest Sharp
+* Google MyMaps Integration
+* Bootstrap
+
 ## Description 
 
-A website for local backyard gardeners with food surplus to connect with community members to distribute foods: Gleaning is simply harvesting extra crops from gardens, or farms, to provide to anyone in need. 
+A website for local backyard gardeners with food surplus to connect with community members to distribute foods: Gleaning is simply harvesting extra crops from gardens, or farms, to provide to anyone in need. Users can learn about becoming a Host, a Gleaner, and a volunteer to assist with food surplus distribution within their city. Discover the benefits, history and faqs about gleaning. 
 
 ## MCV Client Front End Setup/Installation Requirements
+
+* Coming Soon...
+
+## Using This Api
+
+* Coming Soon...
 
 
 ## [MIT](https://opensource.org/license/mit/) License 
