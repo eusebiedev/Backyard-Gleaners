@@ -8,5 +8,21 @@ namespace BackyardGleanersApi.Models
     public BackyardGleanersApiContext(DbContextOptions<BackyardGleanersApiContext> options) : base(options)
     {
     }
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+      builder.Entity<Host>()
+        .HasData(
+          new Host { },
+          new Host { },
+          new Host { },
+          new Host { },
+          new Host { },
+          new Host { },
+          new Host { },
+          new Host { },
+          new Host { },
+          new Host { }
+        );
+    }
   }
 }
