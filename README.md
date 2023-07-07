@@ -17,6 +17,7 @@
 * 1:56: Researching creating a full independent map view with each host pinned, click pin to go to details
 * 2:39: Building initial host Model.cs
 * 2:53: Working on Capstone Proposal file
+* 3:26: Create initial Host database in MySQL
 
 ## Technologies Used
 
