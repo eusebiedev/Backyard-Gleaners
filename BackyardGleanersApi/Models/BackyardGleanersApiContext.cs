@@ -12,17 +12,16 @@ namespace BackyardGleanersApi.Models
     {
       builder.Entity<Host>()
         .HasData(
-          new Host { HostId = 1, },
-          new Host { HostId = 2, },
-          new Host { HostId = 3, },
-          new Host { HostId = 4, },
-          new Host { HostId = 5, },
-          new Host { HostId = 6, },
-          new Host { HostId = 7, },
-          new Host { HostId = 8, },
-          new Host { HostId = 9, },
-          new Host { HostId = 10, }
-
+          new Host { HostId = 1, Name = "", Description = "", Food = "", Availability = "", Location = "", Contact = "" },
+          new Host { HostId = 2, Name = "", Description = "", Food = "", Availability = "", Location = "", Contact = "" },
+          new Host { HostId = 3, Name = "", Description = "", Food = "", Availability = "", Location = "", Contact = "" },
+          new Host { HostId = 4, Name = "", Description = "", Food = "", Availability = "", Location = "", Contact = "" },
+          new Host { HostId = 5, Name = "", Description = "", Food = "", Availability = "", Location = "", Contact = "" },
+          new Host { HostId = 6, Name = "", Description = "", Food = "", Availability = "", Location = "", Contact = "" },
+          new Host { HostId = 7, Name = "", Description = "", Food = "", Availability = "", Location = "", Contact = "" },
+          new Host { HostId = 8, Name = "", Description = "", Food = "", Availability = "", Location = "", Contact = "" },
+          new Host { HostId = 9, Name = "", Description = "", Food = "", Availability = "", Location = "", Contact = "" },
+          new Host { HostId = 10, Name = "", Description = "", Food = "", Availability = "", Location = "", Contact = "" }
         );
     }
   }
