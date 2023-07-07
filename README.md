@@ -22,6 +22,7 @@
 * 3:55: updating README fields
 * 4:15: research authentication and user roles
 * 4:45: Fix corrupted API directory
+* 4:52: Building seeded database, Host Controller
 
 ## Technologies Used
 

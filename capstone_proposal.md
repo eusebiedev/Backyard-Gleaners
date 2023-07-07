@@ -7,9 +7,10 @@
 * Develop and deploy a website for Hosts to connect with Gleaners to harvest and/or distribute surplus foods.
 
 ## List the absolute minimum features the project requires to meet this purpose or goal:
-* MVC Client Front End Views: Home, About, History, Resources, Benefits, Details, Host Map
+* MVC Client Front End Views: Home, About, History, Resources, Benefits, Details
 * Database of Hosts from custom API
 * Gleaner Account Creation (with appropriate Views) to connect with Hosts 
+* Map View with Pinned Host Locations
 
 ## What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 * C#
