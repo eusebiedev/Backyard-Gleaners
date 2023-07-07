@@ -10,6 +10,7 @@ Friday 7/7
 * 9:18: may separate into individual projects for modularity
 * 9:39: creating combined api/client test project to see how to run project from singular repo
 * 10:29: cannot run both api/client in same repo, testing failed
+* 11:11: attempting to combine api/client in test project. close!
 
 ## Technologies Used
 
