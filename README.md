@@ -2,10 +2,10 @@
 
 ### By Eusebie Siebenberg
 
-## Description
+#### Independent Capstone Project @ Epicodus. A Gleaners App built around a custom API and MVC Client Front End.
 
-## Research & Planning Log:
-Friday 7/7
+### Research & Planning Log:
+#### Friday 7/7
 * 8:42: researching combining api/client to one repo
 * 9:18: may separate into individual projects for modularity
 * 9:39: creating combined api/client test project to see how to run project from singular repo
@@ -15,6 +15,9 @@ Friday 7/7
 
 ## Technologies Used
 
+## Description 
+
+A website for local backyard gardeners with food surplus to connect with community members to distribute foods: Gleaning is simply harvesting extra crops from gardens, or farms, to provide to anyone in need. 
 
 ## MCV Client Front End Setup/Installation Requirements
 
