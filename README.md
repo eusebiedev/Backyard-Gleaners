@@ -13,6 +13,7 @@
 * 11:11: attempting to combine api/client in test project. close
 * 11:23: Successfully combined API & Client to a single .Solution project and launched interface!
 * 12:59: Looking into embedding location based google maps for each host
+* 1:28: Successfully embed custom location based google map on profile view in tests
 
 ## Technologies Used
 
