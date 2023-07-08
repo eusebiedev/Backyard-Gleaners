@@ -2,7 +2,7 @@
 
 ### By Eusebie Siebenberg
 
-#### Independent Capstone Project @ Epicodus. A Gleaners App built around a custom API and MVC Client Front End, with Google Maps integration, user account creation.
+#### Independent Capstone Project @ Epicodus. A Gleaners App built around a custom API and MVC Client Front End, with Google Maps integration
 
 ### Research & Planning Log:
 #### Friday 7/7
@@ -29,8 +29,6 @@
 * C#
 * .NET
 * ASP.NET CORE
-* Authentication
-* Identity
 * MVC API Client Front End
 * Entity Framework Core
 * EF Core Migrations

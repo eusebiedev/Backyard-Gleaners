@@ -9,8 +9,9 @@
 ## List the absolute minimum features the project requires to meet this purpose or goal:
 * MVC Client Front End Views: Home, About, History, Resources, Benefits, Details
 * Database of Hosts from custom API
-* Gleaner Account Creation (with appropriate Views) to connect with Hosts 
 * Map View with Pinned Host Locations
+* Connect/Match Hosts with Gleaners
+* Search View for gleaners to find hosts with specific foods
 
 ## What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 * C#
@@ -25,6 +26,7 @@
 * Google MyMaps
 
 ## If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
+* Gleaner Account Creation (with appropriate Views)  
 * Section for Gleaners to leave Reviews/Comments for Hosts
 * API Versioning
 * Calendar Integration page for Hosts
