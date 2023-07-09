@@ -41,7 +41,7 @@
 
 ## Description 
 
-A website for local backyard gardeners with food surplus to connect with community members to distribute foods: Gleaning is simply harvesting extra crops from gardens, or farms, to provide to anyone in need. Users can learn about becoming a Host, a Gleaner, and a volunteer to assist with food surplus distribution within their city. Discover the benefits, history and faqs about gleaning. 
+A website for local backyard gardeners with food surplus to connect with community members to distribute foods: Gleaning is simply harvesting extra crops from gardens, or farms, to provide to anyone in need. Users can learn about becoming a gardening host, a Gleaner, and how to volunteer to assist with food surplus distribution within their city. Discover the benefits, history and facts about gleaning. 
 
 ## MCV Client Front End Setup/Installation Requirements
 
