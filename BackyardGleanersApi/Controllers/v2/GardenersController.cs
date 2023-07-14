@@ -50,7 +50,6 @@ namespace BackyardGleanersApi.Controllers.v2
       {
         query = query.Skip((pageNumber - 1) * pageSize).Take(pageSize); 
       }
-
     return await query.ToListAsync();
     }
 
