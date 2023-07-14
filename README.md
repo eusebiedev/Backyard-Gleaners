@@ -61,6 +61,7 @@ No known bugs as of 07/14/14
 * 9:22: building api controllers
 * 10:21: researching user comment section for gardeners 
 * 11:55: building mvc client front end
+* 2:57: break from building Client, researching Comment section
 
 ## [MIT](https://opensource.org/license/mit/) License 
 
