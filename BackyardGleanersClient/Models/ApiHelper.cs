@@ -1,4 +1,4 @@
-using System.Threading.Tasks;
+// using System.Threading.Tasks;
 using RestSharp;
 
 namespace BackyardGleanersClient.Models
@@ -12,6 +12,7 @@ namespace BackyardGleanersClient.Models
       RestResponse response = await client.GetAsync(request);
       return response.Content;
     }
+
     public static async Task<string> Get(int id)
     {
       RestClient client = new RestClient("https://localhost:5001/");
@@ -19,6 +20,7 @@ namespace BackyardGleanersClient.Models
       RestResponse response = await client.GetAsync(request);
       return response.Content;
     }
+
     public static async void Post(string newGardener)
     {
       RestClient client = new RestClient("https://localhost:5001/");
@@ -36,6 +38,7 @@ namespace BackyardGleanersClient.Models
       request.AddJsonBody(newGardener);
       await client.PutAsync(request);
     }
+    
     public static async void Delete(int id)
     {
       RestClient client = new RestClient("https://localhost:5001/");
