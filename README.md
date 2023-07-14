@@ -4,6 +4,37 @@
 
 #### Independent Capstone Project @ Epicodus. A Gleaners App built around a custom API and MVC Client Front End, with Google Maps integration
 
+## Technologies Used
+
+* C#
+* .NET
+* ASP.NET CORE
+* MVC API Client Front End
+* Entity Framework Core
+* EF Core Migrations
+* Swashbuckle
+* Swagger
+* MySQL
+* Rest Sharp
+* Google MyMaps Integration
+* Bootstrap
+
+## Description 
+
+A website for local backyard gardeners with food surplus to connect with community members to distribute foods: Gleaning is simply harvesting extra crops from gardens, or farms, to provide to anyone in need. Users can learn about becoming a gardening host, a Gleaner, and how to volunteer to assist with food surplus distribution within their city. Discover the benefits, history and facts about gleaning. Additionaly, user will have a full page map view of pinned gardeners location, ability to create a gardeners profile, and search for specific food resources.
+
+## MCV Client Front End Setup/Installation Requirements
+
+* Coming Soon...
+
+## Using This Api
+
+* Coming Soon...
+
+## Known Bugs
+
+No known bugs as of 07/14/14
+
 ### Research & Planning Log:
 #### Friday 7/7
 * 8:42: researching combining api/client to one repo
@@ -29,39 +60,6 @@
 * 8:46: Looking into Google Cal integration
 * 9:22: building api controllers
 * 10:21: researching user comment section for gardeners 
-
-
-## Technologies Used
-
-* C#
-* .NET
-* ASP.NET CORE
-* MVC API Client Front End
-* Entity Framework Core
-* EF Core Migrations
-* Swashbuckle
-* Swagger
-* MySQL
-* Rest Sharp
-* Google MyMaps Integration
-* Bootstrap
-
-## Description 
-
-A website for local backyard gardeners with food surplus to connect with community members to distribute foods: Gleaning is simply harvesting extra crops from gardens, or farms, to provide to anyone in need. Users can learn about becoming a gardening host, a Gleaner, and how to volunteer to assist with food surplus distribution within their city. Discover the benefits, history and facts about gleaning. 
-
-## MCV Client Front End Setup/Installation Requirements
-
-* Coming Soon...
-
-## Using This Api
-
-* Coming Soon...
-
-## Known Bugs
-
-No known bugs as of 07/14/14
-
 
 ## [MIT](https://opensource.org/license/mit/) License 
 
