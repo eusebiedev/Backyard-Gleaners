@@ -18,7 +18,7 @@ namespace BackyardGleanersApi.Controllers.v2
     }
 
     [HttpGet]
-    public async Task<List<Gardener>> Get(string name, string description, string food, string availability, string location, string contact)
+    public async Task<List<Gardener>> Get(int pageNumber, int pageSize, string name, string description, string food, string availability, string location, string contact)
     {
       IQueryable<Gardener> query = _db.Gardeners 
                                   .AsQueryable();
@@ -46,6 +46,11 @@ namespace BackyardGleanersApi.Controllers.v2
       {
         query = query.Where(entry => entry.Contact == contact);
       }
+      if (pageNumber > 0 && pageSize > 0)
+      {
+        query = query.Skip((pageNumber - 1) * pageSize).Take(pageSize); 
+      }
+
     return await query.ToListAsync();
     }
 
@@ -61,5 +66,61 @@ namespace BackyardGleanersApi.Controllers.v2
       return gardener;
     }
 
+    [HttpPost]
+    public async Task<ActionResult<Gardener>> Post([FromBody] Gardener gardener)
+    {
+      _db.Gardeners.Add(gardener);
+      await _db.SaveChangesAsync();
+      return CreatedAtAction(nameof(GetGardener), new { id = gardener.GardenerId }, gardener);
+    }
+
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Put(int id, Gardener gardener)
+    {
+      if (id != gardener.GardenerId)
+      {
+        return BadRequest();
+      }
+
+      _db.Gardeners.Update(gardener);
+
+      try
+      {
+        await _db.SaveChangesAsync();
+      }
+      catch (DbUpdateConcurrencyException)
+      {
+        if (!GardenerExists(id))
+        {
+          return NotFound();
+        }
+        else
+        {
+          throw;
+        }
+      }
+        return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteGardener(int id)
+    {
+      Gardener gardener = await _db.Gardeners.FindAsync(id);
+      if (gardener == null)
+      {
+        return NotFound();
+      }
+
+      _db.Gardeners.Remove(gardener);
+      await _db.SaveChangesAsync();
+
+      return NoContent();
+    }
+
+    private bool GardenerExists(int id)
+    {
+      return _db.Gardeners.Any(e => e.GardenerId == id);
+    }
   }
 }
