@@ -28,6 +28,7 @@
 * 8:00: Studying donation form integration
 * 8:46: Looking into Google Cal integration
 * 9:22: building api controllers
+* 10:21: researching user comment section for gardeners 
 
 
 ## Technologies Used
