@@ -27,6 +27,8 @@
 #### Friday 7/14
 * 8:00: Studying donation form integration
 * 8:46: Looking into Google Cal integration
+* 9:22: building api controllers
+
 
 ## Technologies Used
 
