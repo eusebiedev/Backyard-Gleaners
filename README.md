@@ -25,7 +25,8 @@
 * 4:52: Building seeded database, Host Controller
 
 #### Friday 7/14
-* Studying donation form integration
+* 8:00: Studying donation form integration
+* 8:46: Looking into Google Cal integration
 
 ## Technologies Used
 
