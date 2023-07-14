@@ -25,11 +25,11 @@ A website for local backyard gardeners with food surplus to connect with communi
 
 ## MCV Client Front End Setup/Installation Requirements
 
-* Coming Soon...
+* Coming Soon...! WIP as of 7/14
 
 ## Using This Api
 
-* Coming Soon...
+* Coming Soon...! WIP as of 7/14
 
 ## Known Bugs
 
