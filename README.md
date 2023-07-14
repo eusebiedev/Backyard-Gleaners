@@ -24,6 +24,9 @@
 * 4:45: Fix corrupted API directory
 * 4:52: Building seeded database, Host Controller
 
+#### Friday 7/14
+* Studying donation form integration
+
 ## Technologies Used
 
 * C#
@@ -50,6 +53,10 @@ A website for local backyard gardeners with food surplus to connect with communi
 ## Using This Api
 
 * Coming Soon...
+
+## Known Bugs
+
+No known bugs as of 07/14/14
 
 
 ## [MIT](https://opensource.org/license/mit/) License 

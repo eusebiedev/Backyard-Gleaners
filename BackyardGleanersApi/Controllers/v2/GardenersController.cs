@@ -50,7 +50,7 @@ namespace BackyardGleanersApi.Controllers.v2
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<Gardener>> GetHost(int id)
+    public async Task<ActionResult<Gardener>> GetGardener(int id)
     {
       Gardener gardener = await _db.Gardeners
                             .FirstOrDefaultAsync(gardener => gardener.GardenerId == id);
