@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Gardeners";
+}
+
+@using BackyardGleanersClient.Models;
+
+<ol>
+@foreach (Gardener gardener in Model)
+{
+  <li><strong>@gardener.Name</strong><br> <a href="/Gardener/Details/@(gardener.GardenerId)">View Gardener</a></li>
+}
+</ol>
+
