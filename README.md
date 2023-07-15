@@ -33,7 +33,7 @@ A website for local backyard gardeners with food surplus to connect with communi
 
 ## Known Bugs
 
-No known bugs as of 07/14/14
+No known bugs as of 07/15/23
 
 ### Research & Planning Log:
 #### Friday 7/7
@@ -63,6 +63,9 @@ No known bugs as of 07/14/14
 * 11:55: building mvc client front end
 * 2:57: break from building Client, researching Comment section
 * 4:54: card layout forEach gardener successfull, building views, push and submit
+
+#### Saturday 7/15
+* 2:00: Research theme switcher for dark mode toggle
 
 ## [MIT](https://opensource.org/license/mit/) License 
 
