@@ -15,28 +15,23 @@
 <header>
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" aria-label="">
     <div class="container-xl">
-      <a class="navbar-brand" href="#">Container XL</a>
-      @* <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> *@
-
+      <a class="navbar-brand" href="#">Backyard Gleaners</a>
 			<button class="navbar-toggler first-button" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarToggleMenu"
         aria-controls="navbarToggleExternalContent9" aria-expanded="false"
         aria-label="Toggle navigation">
         <div class="animated-icon1"><span></span><span></span><span></span></div>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarToggleMenu">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="Home" asp-controller="Home" asp-action="Index">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link text-dark" asp-controller="Gardeners" asp-action="Index">Gardeners</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link text-dark">View Map</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
@@ -77,8 +72,6 @@
 </header>
 
 	<div class="container">
-
-		
 		<main role="main" class="p-3">
 			@RenderBody()
 		</main>
@@ -87,9 +80,10 @@
 	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="~/js/site.js" asp-append-version="true"></script>
 	@await RenderSectionAsync("Scripts", required: false)
-	<script type="text/javascript">document.querySelector('.first-button').addEventListener('click', function () {
-
-document.querySelector('.animated-icon1').classList.toggle('open');
-});</script>
+	<script type="text/javascript">
+	document.querySelector('.first-button').addEventListener('click', function () {
+	document.querySelector('.animated-icon1').classList.toggle('open');
+	});
+	</script>
 </body>
 </html>
