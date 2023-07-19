@@ -1,0 +1,35 @@
+@{
+  ViewData["Title"] = $"Edit {Model.Name}";
+}
+
+@model BackyardGleanersClient.Models.Gardener
+
+<h4>Edit @Model.Name</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.GardenerId)
+
+  @Html.LabelFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name, new { @Value = Model.Name})
+  <br>
+  @Html.LabelFor(model => model.Description)
+  @Html.TextBoxFor(model => model.Description, new { @Value = Model.Description})
+  <br>
+  @Html.LabelFor(model => model.Food)
+  @Html.TextBoxFor(model => model.Food, new { Value = Model.Food})
+  <br>
+  @Html.LabelFor(model => model.Availability)
+  @Html.TextBoxFor(model => model.Availability, new { Value = Model.Availability})
+  <br>
+  @Html.LabelFor(model => model.Location)
+  @Html.TextBoxFor(model => model.Location, new { Value = Model.Location})
+    <br>
+  @Html.LabelFor(model => model.Contact)
+  @Html.TextBoxFor(model => model.Contact, new { Value = Model.Contact})
+  <br>
+  <input type="submit" value="Save changes" class="btn btn-primary"/>
+}
+
+<br>
+<p>@Html.ActionLink("Back to details", "Details", new {id = @Model.GardenerId})</p>
