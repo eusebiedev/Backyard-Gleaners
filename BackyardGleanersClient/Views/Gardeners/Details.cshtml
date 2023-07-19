@@ -1,3 +1,29 @@
 @{
-    ViewData["Title"] = "Details";
+		ViewData["Title"] = "Gardener Details";
 }
+
+@model BackyardGleanersClient.Models.Gardener
+
+<h3>Welcome to @Model.Name's Backyard!</h3>
+
+<img src=@Model.ProfilePic />
+
+<p>@Model.Description</p>
+
+<p>@Model.Food</p>
+<p>@Model.Availability</p>
+<p>@Model.Location</p>
+<p>@Model.Contact</p>
+
+
+
+<p>@Html.ActionLink("Edit Gardener details", "Edit", new { id = @Model.GardenerId })</p>
+<p>@Html.ActionLink("Delete Gardener", "Delete", new { id = @Model.GardenerId })</p>
+<p>@Html.ActionLink("Return to all Gardeners", "Index")</p>
+
+@* look into bootstrap Hero style for this page, this is just boilerplate *@
+
+
+
+
+
