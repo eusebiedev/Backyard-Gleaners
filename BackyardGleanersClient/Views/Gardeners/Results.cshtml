@@ -1,0 +1,28 @@
+@{  
+	ViewData["Title"] = "Results";
+}
+
+
+@model List<BackyardGleanersClient.Models.Gardener>
+
+<h2>Search Results</h2>
+
+@if (Model != null && Model.Count > 0)
+{
+    <ul>
+        @foreach (var gardener in Model)
+        {
+            <li>
+                <strong>Name:</strong> @gardener.Name<br />
+                <strong>Description:</strong> @gardener.Description<br />
+                <strong>Food:</strong> @gardener.Food<br />
+                <p><img src=@gardener.ProfilePic /></p>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No gardeners found based on the search query.</p>
+}
+

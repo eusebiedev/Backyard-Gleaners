@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using BackyardGleanersClient.Models;
+using System.Text.Json; 
+using Newtonsoft.Json;
 
 namespace BackyardGleanersClient.Controllers;
 
 public class GardenersController : Controller
-  {
+{
   public IActionResult Index()
   {
     List<Gardener> gardeners = Gardener.GetGardeners();
@@ -35,7 +37,7 @@ public class GardenersController : Controller
   }
 
   [HttpPost]
-  public ActionResult Edit(int id, Gardener gardener)
+  public ActionResult Edit(Gardener gardener)
   {
     Gardener.Put(gardener);
     return RedirectToAction("Details", new { id = gardener.GardenerId });
@@ -52,5 +54,29 @@ public class GardenersController : Controller
   {
     Gardener.Delete(id);
     return RedirectToAction("Index");
+  }
+
+  public ActionResult Search()
+  {
+    return View();
+  }
+
+  [HttpPost]
+  public async Task<ActionResult> Results(string food)
+  {
+    string jsonContent = await ApiHelper.Search(food);
+
+    if (!string.IsNullOrEmpty(jsonContent))
+    {
+        List<Gardener> searchResults = JsonConvert.DeserializeObject<List<Gardener>>(jsonContent);
+
+        // Pass the search results to the Results View
+        return View("Results", searchResults);
+    }
+    else
+    {
+        return View("NoResults");
+    }
+
   }
 }
