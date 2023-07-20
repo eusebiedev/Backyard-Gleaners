@@ -123,12 +123,31 @@ public class GardenersController : ControllerBase
     return _db.Gardeners.Any(e => e.GardenerId == id);
   }
 
-  [HttpGet("Search")] //create a search by anything maybe, extend the arguements(string food, string location) etc
-  public ActionResult<Gardener> SearchGardenersByFood(string food)
-  {
-    var gardeners = _db.Gardeners.Where(g => g.Food.Contains(food)).ToList();
+  // [HttpGet("Search")] //create a search by anything maybe, extend the arguements(string food, string location) etc
+  // public ActionResult<Gardener> SearchGardenersByFood(string food)
+  // {
+  //   var gardeners = _db.Gardeners.Where(g => g.Food.Contains(food)).ToList();
+  //   return Ok(gardeners);
+  // }
+
+  [HttpGet("Search")]
+public ActionResult<IEnumerable<Gardener>> SearchGardeners(string food, string location)
+{
+    IQueryable<Gardener> query = _db.Gardeners;
+
+    if (!string.IsNullOrEmpty(food))
+    {
+        query = query.Where(g => g.Food.Contains(food));
+    }
+
+    if (!string.IsNullOrEmpty(location))
+    {
+        query = query.Where(g => g.Location.Contains(location));
+    }
+
+    var gardeners = query.ToList();
     return Ok(gardeners);
-  }
+}
 
 }
 

@@ -14,5 +14,8 @@
   @Html.LabelFor(model => model.Food, "Food", new { @class = "form-label"} )
   @Html.TextBoxFor(model => model.Food, new { @class = "form-control"})
   <br>
+  @Html.LabelFor(model => model.Location, "Location", new { @class = "form-label"} )
+  @Html.TextBoxFor(model => model.Location, new { @class = "form-control"})
+  <br>
   <input type="submit" value="Search Gardeners" class="btn btn-primary"/>
 }
