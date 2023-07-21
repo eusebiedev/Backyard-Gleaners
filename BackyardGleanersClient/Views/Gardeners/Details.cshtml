@@ -2,13 +2,11 @@
 		ViewData["Title"] = "Gardener Details";
 }
 
-@using BackyardGleanersClient.Models;
-
 <div class="container py-5">
-	<div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+	<div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg bg-light">
 		<div class="col-lg-6">
 		<h1 class="display-6 fw-bold text-body-emphasis lh-1 mb-3">Welcome to @Model.Name's Backyard!</h1>
-		<p class="lead">@Model.Description</p>
+		<p class="fs-5">@Model.Description</p>
 			<div style="font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;">
 				<span class="material-symbols-outlined" style="display: inline-block;">yard</span>
 				<p class="lead" style="display: inline-block;"><strong style="font-variation-settings: 'wght' 600;">From the Garden:</strong> @Model.Food</p>
