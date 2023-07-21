@@ -76,6 +76,10 @@ public class GardenersController : Controller
     {
       return View("NoResults");
     }
+  }
 
+  public ActionResult About ()
+  {
+    return View();
   }
 }
