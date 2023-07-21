@@ -66,6 +66,7 @@ No known bugs as of 07/21/23
 
 #### Saturday 7/15
 * 2:00: Research theme switcher for dark mode toggle
+* 4:30: Looking into Hosting on a Azure, Render
 
 #### Friday 7/21
 * 8:16: Research migrating search function to use navbar instead of opening View
