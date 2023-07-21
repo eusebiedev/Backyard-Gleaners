@@ -13,6 +13,7 @@ html {
   min-height: 100%;
 }
 
+
 .flex-equal > * {
   flex: 1;
 }
