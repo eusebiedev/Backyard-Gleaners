@@ -16,24 +16,24 @@
 * Swagger
 * MySQL
 * Rest Sharp
-* Google MyMaps Integration
+* Google MyMaps Integration, Google Icons
 * Bootstrap
 
 ## Description 
 
 A website for local backyard gardeners with food surplus to connect with community members to distribute foods: Gleaning is simply harvesting extra crops from gardens, or farms, to provide to anyone in need. Users can learn about becoming a gardening host, a Gleaner, and how to volunteer to assist with food surplus distribution within their city. Discover the benefits, history and facts about gleaning. Additionaly, user will have a full page map view of pinned gardeners location, ability to create a gardeners profile, and search for specific food resources.
 
-## MCV Client Front End Setup/Installation Requirements
+## Setup/Installation Requirements
 
-* Coming Soon...! WIP as of 7/14
+* Coming Soon...! WIP as of 7/21/23
 
 ## Using This Api
 
-* Coming Soon...! WIP as of 7/14
+* Coming Soon...! WIP as of 7/21/23
 
 ## Known Bugs
 
-No known bugs as of 07/15/23
+No known bugs as of 07/21/23
 
 ### Research & Planning Log:
 #### Friday 7/7
@@ -66,6 +66,9 @@ No known bugs as of 07/15/23
 
 #### Saturday 7/15
 * 2:00: Research theme switcher for dark mode toggle
+
+#### Friday 7/21
+* 8:16: Research migrating search function to use navbar instead of opening View
 
 ## [MIT](https://opensource.org/license/mit/) License 
 
