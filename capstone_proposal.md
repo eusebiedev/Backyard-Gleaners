@@ -23,7 +23,7 @@
 * EF Core Migrations
 * Swagger
 * HTML, CSS, Bootstrap
-* Google MyMaps
+* Google MyMaps, Google Icons
 
 ## If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
 * Gleaner Account Creation (with appropriate Views) to connect Gardeners with Gleaners
