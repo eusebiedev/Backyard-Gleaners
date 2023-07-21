@@ -65,6 +65,17 @@ html {
   color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+.results-button {
+  border-radius: 2em;
+  background-color: teal;
+  color: #ffffff;
+  padding: 0.5em 1.5em;
+}
+.results-button:hover {
+  background-color: rgba(0, 128, 128, 0.7);
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
 .navbar-toggler:focus {
   text-decoration: none;
