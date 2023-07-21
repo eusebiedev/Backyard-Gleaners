@@ -34,14 +34,14 @@
             <a class="nav-link text-dark" asp-controller="Gardeners" asp-action="Search">Search</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" asp-controller="" asp-action="">View Map</a>
+            <a class="nav-link text-dark" asp-controller="Gardeners" asp-action="Map">View Map</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Learn More</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Just another link will go here!</a></li>
+              <li><a class="dropdown-item nav-link text-dark" asp-controller="Gardeners" asp-action="About">Who We Are</a></li>
+              <li><a class="dropdown-item nav-link text-dark" asp-controller="Gardeners" asp-action="History">History</a></li>
+              <li><a class="dropdown-item nav-link text-dark" asp-controller="Gardeners" asp-action="Contact">Contact Us</a></li>
             </ul>
           </li>
         </ul>
