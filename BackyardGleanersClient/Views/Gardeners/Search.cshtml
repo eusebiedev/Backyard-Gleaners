@@ -4,15 +4,31 @@
 
 @model BackyardGleanersClient.Models.Gardener;
 
-<h3>Search our Gardeners: </h3>
+<main class="my-5">
+  <div class="container col-xl-10 col-xxl-8 px-4 py-5 shadow-lg">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Search our Gardeners</h1>
+        <p class="col-lg-10 fs-4">You can search by food type or location!</p>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+        @using (Html.BeginForm("Results", "Gardeners", FormMethod.Post))
+        {
+          <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+          <div class="form mb-3">
+          @Html.LabelFor(model => model.Food, "Food", new { @class = "form-label"} )
+          @Html.TextBoxFor(model => model.Food, new { @class = "form-control"})
+          </div>
 
-@using (Html.BeginForm("Results", "Gardeners", FormMethod.Post))
-{
-  @Html.LabelFor(model => model.Food, "Food", new { @class = "form-label"} )
-  @Html.TextBoxFor(model => model.Food, new { @class = "form-control"})
-  <br>
-  @Html.LabelFor(model => model.Location, "Location", new { @class = "form-label"} )
-  @Html.TextBoxFor(model => model.Location, new { @class = "form-control"})
-  <br>
-  <input type="submit" value="Search Gardeners" class="btn btn-primary"/>
-}
+          @Html.LabelFor(model => model.Location, "Location", new { @class = "form-label"} )
+          @Html.TextBoxFor(model => model.Location, new { @class = "form-control"})
+          <br>
+          <input type="submit" value="Search Gardeners" class="btn btn-primary"/>
+          </form>
+        }
+      </div>
+    </div>
+  </div>
+</main>
+
+
