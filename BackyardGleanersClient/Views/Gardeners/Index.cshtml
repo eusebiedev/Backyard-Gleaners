@@ -3,6 +3,7 @@
 }
 
 @using BackyardGleanersClient.Models;
+
 <div class="container">
   <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
     @foreach (Gardener gardener in Model)
@@ -12,7 +13,6 @@
         <img src=@gardener.ProfilePic class="" alt="gardener">
         <div class="card-body">
           <h5 class="card-title"> <strong>@gardener.Name</strong></h5>
-          @* <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> *@
           <a href="/Gardeners/Details/@(gardener.GardenerId)" class="btn btn-primary btn-sm">View Gardener</a>
         </div>
       </div>

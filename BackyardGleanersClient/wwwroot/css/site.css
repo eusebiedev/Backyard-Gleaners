@@ -13,15 +13,18 @@ html {
   min-height: 100%;
 }
 
-/* body {
-  margin-bottom: 60px;
-} */
+/* custom detail style */
+
+.detail-img {
+  border-radius: 5%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* custom card styles */
 
 .h-100 {
   height: 100%!important;
 }
-
-
 
 .card {
   margin-top: 1em;
@@ -73,7 +76,7 @@ html {
   border: none;
 }
 
-
+/* navbar toggle animation experiment */
 /* Icon 1 */
 
 .animated-icon1,

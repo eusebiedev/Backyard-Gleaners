@@ -47,14 +47,16 @@ public class ApiHelper : ControllerBase
     request.AddHeader("Content-Type", "application/json");
     await client.DeleteAsync(request);
   }
+
+  // custom api search method
   public static async Task<string> Search(string food, string location)
   {
-      RestClient client = new RestClient("https://localhost:5001/");
-      RestRequest request = new RestRequest($"api/v2/gardeners/Search", Method.Get);
-      request.AddParameter("food", food); // Add the food parameter to the query string
-      request.AddParameter("location", location);
-      RestResponse response = await client.ExecuteAsync(request);
-      return response.Content;
+    RestClient client = new RestClient("https://localhost:5001/");
+    RestRequest request = new RestRequest($"api/v2/gardeners/Search", Method.Get);
+    request.AddParameter("food", food);
+    request.AddParameter("location", location);
+    RestResponse response = await client.ExecuteAsync(request);
+    return response.Content;
   }
 
 }

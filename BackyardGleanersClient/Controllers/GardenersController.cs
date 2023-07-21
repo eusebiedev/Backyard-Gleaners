@@ -68,14 +68,13 @@ public class GardenersController : Controller
 
     if (!string.IsNullOrEmpty(jsonContent))
     {
-        List<Gardener> searchResults = JsonConvert.DeserializeObject<List<Gardener>>(jsonContent);
+      List<Gardener> searchResults = JsonConvert.DeserializeObject<List<Gardener>>(jsonContent);
 
-        // Pass the search results to the Results View
-        return View("Results", searchResults);
+      return View("Results", searchResults);
     }
     else
     {
-        return View("NoResults");
+      return View("NoResults");
     }
 
   }

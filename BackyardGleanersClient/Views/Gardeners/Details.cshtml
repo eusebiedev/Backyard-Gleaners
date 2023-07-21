@@ -2,19 +2,33 @@
 		ViewData["Title"] = "Gardener Details";
 }
 
-@model BackyardGleanersClient.Models.Gardener
+@using BackyardGleanersClient.Models;
 
-<h3>Welcome to @Model.Name's Backyard!</h3>
-
-<img src=@Model.ProfilePic />
-
-<p>@Model.Description</p>
-
-<p>@Model.Food</p>
-<p>@Model.Availability</p>
-<p>@Model.Location</p>
-<p>@Model.Contact</p>
-
-<p>@Html.ActionLink("Return to all Gardeners", "Index")</p>
-
-@* look into bootstrap Hero style for this page, this is just boilerplate *@
+<div class="container col-xxl px-1">
+	<div class="row flex-lg-row-reverse align-items-center g-5 p-5">
+		<div class="col-10 col-sm-8 col-lg-6">
+			<img src=@Model.ProfilePic class="d-block mx-lg-auto img-fluid detail-img" alt="gardener" width="640" height="425" loading="lazy" />
+		</div>
+		<div class="col-lg-6">
+			<h1 class="display-6 fw-bold text-body-emphasis lh-1 mb-3">Welcome to @Model.Name's Backyard!</h1>
+			<p class="lead">@Model.Description</p>
+				<div style="font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;">
+					<span class="material-symbols-outlined" style="display: inline-block;">yard</span>
+					<p class="lead" style="display: inline-block;"><strong style="font-variation-settings: 'wght' 600;">From the Garden:</strong> @Model.Food</p>
+				</div>
+				<div style="font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;">
+					<span class="material-symbols-outlined" style="display: inline-block;">calendar_month</span>
+					<p class="lead" style="display: inline-block;"><strong style="font-variation-settings: 'wght' 600;">Availability:</strong> @Model.Availability</p>
+				</div>
+				<div style="font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;">
+					<span class="material-symbols-outlined" style="display: inline-block;">pin_drop</span>
+					<p class="lead" style="display: inline-block;"><strong style="font-variation-settings: 'wght' 600;">Location:</strong> @Model.Location</p>
+				</div>
+				<div style="font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;">
+					<span class="material-symbols-outlined" style="display: inline-block;">mail</span>
+					<p class="lead" style="display: inline-block;"><strong style="font-variation-settings: 'wght' 600;">Contact:</strong> @Model.Contact</p>
+				</div>
+			</div>
+		</div> 
+	</div>
+</div>
