@@ -64,7 +64,7 @@ public class GardenersController : Controller
   [HttpPost]
   public async Task<ActionResult> Results(string food, string location)
   {
-    string jsonContent = await ApiHelper.Search(food, location);
+    string jsonContent = await ApiHelper.Search(food,location);
 
     if (!string.IsNullOrEmpty(jsonContent))
     {

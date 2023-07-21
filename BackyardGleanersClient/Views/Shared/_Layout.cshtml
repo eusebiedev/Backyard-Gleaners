@@ -8,8 +8,6 @@
 	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 	<link rel="stylesheet" href="~/BackyardGleanersClient.styles.css" asp-append-version="true" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
-
-
 </head>
 <body style="padding-top:3rem;">
 <header>
@@ -45,19 +43,15 @@
             </ul>
           </li>
         </ul>
-        <form role="search">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-        </form>
       </div>
     </div>
   </nav>
 </header>
-
-	<div class="container">
-		<main role="main" class="p-3">
-			@RenderBody()
-		</main>
-	</div>
+<div class="container">
+  <main role="main" class="p-3">
+    @RenderBody()
+  </main>
+</div>
 	<script src="~/lib/jquery/dist/jquery.min.js"></script>
 	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="~/js/site.js" asp-append-version="true"></script>
