@@ -82,4 +82,8 @@ public class GardenersController : Controller
   {
     return View();
   }
+  public ActionResult Map ()
+  {
+    return View();
+  }
 }

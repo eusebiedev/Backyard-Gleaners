@@ -21,7 +21,8 @@
 			</div>
 			<div style="font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;">
 				<span class="material-symbols-outlined" style="display: inline-block;">mail</span>
-				<p class="lead" style="display: inline-block;"><strong style="font-variation-settings: 'wght' 600;">Contact:</strong> @Model.Contact</p>
+				<p class="lead" style="display: inline-block;"><strong style="font-variation-settings: 'wght' 600;">Contact:</strong> @Model.Contact</p><br/>
+				<button type="button" class="btn btn-sm results-button" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-whatever="">Get in Touch!</button>
 			</div>
 		</div>
 		<div class="col-10 col-sm-8 col-lg-6">
@@ -29,3 +30,32 @@
 		</div>
 	</div> 
 </div>
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="contactModalLabel">New message</h1>
+        <button type="button" class="btn-close btn-sm results-button" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm results-button" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-sm results-button">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
