@@ -19,6 +19,12 @@ html {
   min-height: 100%;
 }
 
+.icon-link > .bi {
+  width: .75em;
+  height: .75em;
+  text-decoration:solid;
+}
+
 
 .flex-equal > * {
   flex: 1;

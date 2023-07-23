@@ -1,8 +1,38 @@
 @{
-  ViewData["Title"] = "Home Page";
+  ViewData["Title"] = "";
 }
 
-<div class="text-center">
-  <h1 class="display-4">Welcome to the Portland Backyard Gleaners Resource</h1>
-  <p>Feel free to check out <a href="/gardeners">the gardeners who have graciously signed up to contribute!</a></p>
+<div class="container">
+  <div class="container-fluid"></div>
+  </div>
 </div>
+
+<div class="d-md-flex flex-md-equal w-100 ps-md-3 bg-light"> 
+  <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-1">
+      <h2 class="display-4 fw-bold">Welcome to the <br/>Portland Backyard Gleaners Resource</h2>
+      <p class="lead">We stand by waste not want not!</p>
+      <a class="icon-link" asp-controller="Gardeners" asp-action="History">
+        Discover more about the history of gleaning!
+      <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+<img src="/img/applebanner.jpeg" width="100%" height=""/>
+
+@* chevron practice for arrow! *@
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/>
+  </symbol>
+  <symbol id="cart" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+  <symbol id="chevron-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+  </symbol>
+</svg>
+
