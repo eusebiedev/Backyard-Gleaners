@@ -6,8 +6,6 @@ body {
   background-color: rgb(0, 206, 148);
 }
 
-
-
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -24,7 +22,6 @@ html {
   height: .75em;
   text-decoration:solid;
 }
-
 
 .flex-equal > * {
   flex: 1;
@@ -97,6 +94,13 @@ html {
   background-color: rgba(0, 128, 128, 0.7);
   color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button {
+  border-radius: 2em;
+  background-color: teal;
+  color: #ffffff;
+  padding: 0.5em 0.5em;
 }
 
 .navbar-toggler:focus {

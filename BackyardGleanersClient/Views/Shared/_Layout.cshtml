@@ -14,7 +14,7 @@
 <header>
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" aria-label="">
     <div class="container-xl">
-      <a class="navbar-brand nav-link" asp-controller="Home" asp-action="Index">Backyard Gleaners</a>
+      <a class="navbar-brand nav-link fw-bold" asp-controller="Home" asp-action="Index">Backyard Gleaners</a>
 			<button class="navbar-toggler first-button" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarToggleMenu"
         aria-controls="navbarToggleExternalContent9" aria-expanded="false"
@@ -22,25 +22,25 @@
         <div class="animated-icon1"><span></span><span></span><span></span></div>
       </button>
       <div class="collapse navbar-collapse" id="navbarToggleMenu" style="padding-left: 15px;">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
           <li class="nav-item">
-            <a class="nav-link active text-light btn btn-sm results-button" aria-current="Home" asp-controller="Home" asp-action="Index">Home</a>
+            <a class="nav-link active text-light btn btn-sm nav-button rounded-pill" aria-current="Home" asp-controller="Home" asp-action="Index">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light btn btn-sm results-button" asp-controller="Gardeners" asp-action="Index">Gardeners</a>
+            <a class="nav-link text-light btn btn-sm nav-button rounded-pill" asp-controller="Gardeners" asp-action="Index">Gardeners</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light btn btn-sm results-button" asp-controller="Gardeners" asp-action="Search">Search</a>
+            <a class="nav-link text-light btn btn-sm nav-button rounded-pill" asp-controller="Gardeners" asp-action="Search">Search</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light btn btn-sm results-button" asp-controller="Gardeners" asp-action="Map">View Map</a>
+            <a class="nav-link text-light btn btn-sm nav-button rounded-pill" asp-controller="Gardeners" asp-action="Map">View Map</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown" aria-expanded="false">Learn More</a>
+            <a class="nav-link dropdown-toggle text-light btn btn-sm nav-button rounded-pill" href="#" data-bs-toggle="dropdown" aria-expanded="false">Learn More</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item nav-link text-dark" asp-controller="Gardeners" asp-action="About">Who We Are</a></li>
-              <li><a class="dropdown-item nav-link text-dark" asp-controller="Gardeners" asp-action="History">History</a></li>
-              <li><a class="dropdown-item nav-link text-dark" asp-controller="Gardeners" asp-action="Contact">Contact Us</a></li>
+              <li><a class="dropdown-item nav-link text-dark fw-bold" asp-controller="Gardeners" asp-action="About">Who We Are</a></li>
+              <li><a class="dropdown-item nav-link text-dark fw-bold" asp-controller="Gardeners" asp-action="History">History</a></li>
+              <li><a class="dropdown-item nav-link text-dark fw-bold" asp-controller="Gardeners" asp-action="Contact">Contact Us</a></li>
             </ul>
           </li>
         </ul>
