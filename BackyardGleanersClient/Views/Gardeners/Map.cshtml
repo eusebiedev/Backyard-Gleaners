@@ -2,8 +2,22 @@
     ViewData["Title"] = "Map";
 }
 
-<main class="container mx-auto py-3">
-  <div>
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1rBhZTlKQ5WZibEq-IChgwU9DgVUOQvM&ehbc=2E312F" width="100%" height="640"></iframe>  
+<main class="container mx-auto">
+  <div class="d-md-flex flex-md-equal w-100"> 
+    <div class="text-center">
+      <div class="p-1">
+        <button class="btn btn-sm results-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">About our Gardener's Map!</button></div></div></div>
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasTopLabel">Backyard Gleaners Resource</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p class="lead fs-5 w-50">Currently, our map contains a dozen local gardener's who've graciously signed up to be a part of this service and contribute to the community at large, distributing their surplus foods grown in their own backyard. Simply click on any of the pinned locations to see what produce they offer, and time-frame of availability!
+          </p>
+        </div>
+      </div>    
+    <div>
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1rBhZTlKQ5WZibEq-IChgwU9DgVUOQvM&ehbc=2E312F" width="100%" height="640"></iframe>
   </div>
 </main>
