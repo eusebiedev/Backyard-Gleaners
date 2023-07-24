@@ -21,11 +21,78 @@
 
 ## Description 
 
-A website for local backyard gardeners with food surplus to connect with community members to distribute foods: Gleaning is simply harvesting extra crops from gardens, or farms, to provide to anyone in need. Users can learn about becoming a gardening host, a Gleaner, and how to volunteer to assist with food surplus distribution within their city. Discover the benefits, history and facts about gleaning. Additionaly, user will have a full page map view of pinned gardeners location, ability to create a gardeners profile, and search for specific food resources.
+A website for local backyard gardeners with food surplus to connect with community members to distribute foods: Gleaning is simply harvesting extra crops from gardens, or farms, to provide to anyone in need. Users can learn about becoming a gardening host, a Gleaner, and how to volunteer to assist with food surplus distribution within their city. Discover the benefits, history and facts about gleaning. Additionaly, user will have a full page map view of pinned gardeners location, ability to create a gardeners profile, and search for specific food resources by type and location.
 
 ## Setup/Installation Requirements
 
-* Coming Soon...! WIP as of 7/21/23
+1. Open your shell of choice (e.g., Terminal or GitBash) and run these commands in order:
+    * Clone this repository with $ `git clone https://github.com/eusebiedev/Backyard-Gleaners.git`
+    * Open in your favorite IDE, navigate to the root directory of this project `BackyardGleaners.Solution`, Create a `.gitignore` file with $ `touch .gitignore`, copy/paste this into the .gitignore file:
+      ```
+      bin
+      obj
+      appsettings.json
+      appsettings.*.json
+      ``` 
+2. `API Setup`: Navigate to this project's API directory called `BackyardGleanersApi` with $ `cd BackyardGleanersApi`
+    * create a new file called appsettings.json with $ `touch appsettings.json`, copy/paste this into the file, replacing `user-id`, and `password` with your own values for MySQL Workbench.
+(remove square brackets when inputting your details):
+      ```
+      {
+        "Logging": {
+          "LogLevel": {
+            "Default": "Information",
+            "Microsoft.AspNetCore": "Warning"
+          }
+        },
+        "AllowedHosts": "*",
+        "ConnectionStrings": {
+          "DefaultConnection": "Server=localhost;Port=3306;database=backyard_gleaners_api;uid=root;pwd=epicodus;"
+        }
+      }
+      ```
+    * create another file called appsettings.Development.json with $ `touch appsettings.Development.json`, copy/paste the following code:
+      ```
+      {
+        "Logging": {
+          "LogLevel": {
+            "Default": "Information",
+            "Microsoft": "Trace",
+            "Microsoft.AspNetCore": "Information",
+            "Microsoft.Hosting.Lifetime": "Information"
+          }
+        }
+      }
+      ```
+3. `Database Setup`: Within the `BackyardGleanersApi` directory, run $ `dotnet ef database update` to generate the database. Open your copy of MySQL Workbench, click on the `Navigator > Schemas`, right-click and select `Refresh All`, you should see your new BackyardGleanersApi database.
+
+4. `MVC Client Setup`: Navigate to this project's Client directory called `BackyardGleanersClient` with $ `cd BackyardGleanersClient`
+    * create a new file called appsettings.json with $ `touch appsettings.json`, copy/paste this into the file:
+      ```
+      {
+        "Logging": {
+          "LogLevel": {
+            "Default": "Information",
+            "Microsoft.AspNetCore": "Warning"
+          }
+        },
+        "AllowedHosts": "*"
+      }
+      ```
+    * create another file called appsettings.Development.json with $ `touch appsettings.Development.json`, copy/paste the following code:
+      ```
+      {
+        "Logging": {
+          "LogLevel": {
+            "Default": "Information",
+            "Microsoft.AspNetCore": "Warning"
+          }
+        }
+      }
+      ```
+5.  To use this app, both the API and MVC must be running. After following the instructions outlined above:
+    * Start the API First using $ `dotnet run` from within the BackyardGleanersApi directory
+    * Then start the Client using $ `dotnet watch run` from within the BackyardGleanersClient directory. This command will launch the application in your browser!
 
 ## Using This Api
 
@@ -33,7 +100,7 @@ A website for local backyard gardeners with food surplus to connect with communi
 
 ## Known Bugs
 
-No known bugs as of 07/21/23
+No known bugs as of 07/24/23
 
 ### Research & Planning Log:
 #### Friday 7/7
