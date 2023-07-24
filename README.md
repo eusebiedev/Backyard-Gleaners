@@ -4,6 +4,8 @@
 
 #### Independent Capstone Project @ Epicodus. A Gleaners App built around a custom API and MVC Client Front End, with Google Maps integration
 
+[API Usage](#using-this-api)
+
 ## Technologies Used
 
 * C#
@@ -35,7 +37,7 @@ A website for local backyard gardeners with food surplus to connect with communi
       appsettings.*.json
       ``` 
 2. `API Setup`: Navigate to this project's API directory called `BackyardGleanersApi` with $ `cd BackyardGleanersApi`
-    * create a new file called appsettings.json with $ `touch appsettings.json`, copy/paste this into the file, replacing `user-id`, and `password` with your own values for MySQL Workbench.
+    * create a new file called appsettings.json with $ `touch appsettings.json`, copy/paste this into the file, replacing `uid` and `pwd` with your own values for using MySQL Workbench.
 (remove square brackets when inputting your details):
       ```
       {
@@ -96,7 +98,44 @@ A website for local backyard gardeners with food surplus to connect with communi
 
 ## Using This Api
 
-* Coming Soon...! WIP as of 7/21/23
+#### To test routes in Swagger: 
+
+* In your terminal, navigate to the BackyardGleanersApi directory and run ```dotnet watch run``` 
+* In your broswer, open https://localhost:5001/swagger/index.html
+* Use the GUI to navigate the API and test the endpoints
+* `API Versioning` is enabled, which defaults to API v2 when Swagger opens. Simply use the Swagger `Select a definition` drop down options list to select API v1. Versioning is important because when we make breaking changes in the future, we can push these changes to a new version, and retain an original version for enterprises that can't update to Version 2 just yet.
+
+#### To test routes in Postman: 
+* Make sure that Postman API Platform is downloaded to your device
+* Start a new request by clicking the + at the top of the window
+* Copy and paste any of the below listed end point links into the text bar that says 'Enter URL or paste text'
+* Make sure the method to the left of the text box matches the method described for the endpoint you are testing
+* If route requires a body, navigate to the body window just below the text box
+* Copy and paste the body code listed above and replace fields with their respective values
+* Click send and wait for response at the bottom of the window
+* To access API v1 in Postman: `https://localhost:5001/api/v1/gardeners/` 
+* To access API v2 in Postman: `https://localhost:5001/api/v2/gardeners/`
+
+## Api Endpoints
+```
+Endpoints:
+GET /api/v2/gardeners/
+GET /api/v2/gardeners/{id}
+POST /api/v2/gardeners/
+PUT /api/v2/gardeners/{id}
+DELETE /api/v2/gardeners/{id}
+SEARCH /api/v2/garderers/search?{}={}
+```
+
+## Example URLs for Requests on Gardeners
+| Parameter  | Type   | Description  | Sample Url  |
+|----------- |-----   | ---------    | -------------  | 
+| Gardeners  | List   | Returns a list of all gardeners in database | https://localhost:5001/api/v2/gardeners |
+| Name  | String   | Returns a garderner with matching name |https://localhost:5001/api/v2/Gardeners?name=Cherry%20Bark |
+| Food  | String   | Returns a gardener with matching food surplus |https://localhost:5001/api/v2/Gardeners?food=cherries |
+| Search  | Query   | Returns a gardener with matching food or location | https://localhost:5001/api/v2/Gardeners/Search?location=se
+
+#### API endpoints for Post, Put, Delete will be limited to user accounts in the future.
 
 ## Known Bugs
 
