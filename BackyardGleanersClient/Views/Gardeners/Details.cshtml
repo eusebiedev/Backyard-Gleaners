@@ -23,11 +23,13 @@
 				<span class="material-symbols-outlined" style="display: inline-block;">mail</span>
 				<p class="lead" style="display: inline-block;"><strong style="font-variation-settings: 'wght' 600;">Contact:</strong> @Model.Contact</p><br/>
 				<button type="button" class="btn btn-sm results-button" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-whatever="">Get in Touch!</button>
+                
 			</div><br/>
 		</div>
 		<div class="col-10 col-sm-8 col-lg-6">
 		<img src=@Model.ProfilePic class="d-block mx-lg-auto img-fluid detail-img" alt="gardener" width="640" height="425" loading="lazy" />
 		</div>
+    <p>@Html.ActionLink("Delete Gardener", "Delete", new { id = @Model.GardenerId})</p>
 
 		@* comment box experiment *@
 		<div class="container d-flex-md">
@@ -41,6 +43,7 @@
 		</div>   
 	</div> 
 </div>
+
 
 <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
   <div class="modal-dialog">

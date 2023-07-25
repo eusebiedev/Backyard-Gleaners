@@ -18,6 +18,14 @@ body {
   font-family: 'Noto Serif Display', serif;
 }
 
+#delete-profile {
+  background-image: url("/img/americgothic.jpeg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -299,4 +307,11 @@ transform: rotate(-45deg);
 top: 21px;
 left: 8px;
 }
+
+.delete-form {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+
 
