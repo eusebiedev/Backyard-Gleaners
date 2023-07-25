@@ -58,5 +58,4 @@ public class ApiHelper : ControllerBase
     RestResponse response = await client.ExecuteAsync(request);
     return response.Content;
   }
-
 }

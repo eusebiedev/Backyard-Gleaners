@@ -173,13 +173,12 @@ No known bugs as of 07/24/23
 #### Saturday 7/15
 * 2:00: Research theme switcher for dark mode toggle
 
-#### Tuesday 7/25
-* 11:55: WIP: Adding Identity is causing many issues, may have to add to stretch goal
-
-
 #### Friday 7/21
 * 8:16: Research migrating search function to use navbar instead of opening View
 * 4:30: Looking into Hosting on a Azure, Render
+
+#### Tuesday 7/25
+* 11:55: WIP: Adding Identity is causing many issues, may have to add to stretch goal
 
 [Back to Top](#backyard-gleaners)
 
