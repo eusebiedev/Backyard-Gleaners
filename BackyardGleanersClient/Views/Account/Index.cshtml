@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Account";
+}
+
+
+<main class="my-5">
+  <div class="container col-xl-10 col-xxl-8 px-4 py-5 shadow-lg bg-light rounded-3">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-6 fw-bold lh-1 text-body-emphasis mb-3">Register for a free account to become a Backyard Gardening Host!</h1>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+        @if (User.Identity.IsAuthenticated)
+        {
+          <p>Hello @User.Identity.Name!</p>
+          @using (Html.BeginForm("LogOff", "Account"))
+          {
+            <input type="submit" class="btn btn-primary btn-sm results-button" value="Log out" />
+          }
+        }
+        else
+        {
+          <p>@Html.ActionLink("Register", "Register")</p>
+          <p>@Html.ActionLink("Log in", "Login")</p>
+        }
+      </div>
+    </div>
+  </div>
+</main>
