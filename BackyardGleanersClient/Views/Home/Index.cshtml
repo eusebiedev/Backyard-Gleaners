@@ -2,31 +2,29 @@
   ViewData["Title"] = "";
 }
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@600&display=swap" rel="stylesheet">
-<div class="container">
-  <div class="container-fluid"></div>
-  </div>
-</div>
 
-<div class="d-md-flex flex-md-equal w-100 ps-md-3 bg-light"> 
-  <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
-    <div class="my-3 p-1">
-      <h2 class="display-4 fw-bold text-dark splash-header">Welcome to the <br/>Portland Backyard Gleaners Resource</h2>
-      <p class="fs-4 splash-header"><em>Promoting waste not want not!</em></p>
-    </div>
-    <div class="row g-1">
-      <div class="col-md-6">
-      <a class="icon-link" asp-controller="Gardeners" asp-action="History">
-        Discover more about the history of gleaning!
-      <svg class="bi"><use xlink:href="#chevron-right"/></svg></a>
+<body id="splash-main">
+  <div class="container my-5">
+    <div class="row bg-light rounded shadow-lg"> 
+      <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-3 px-md-5 text-center">
+        <div class="my-3 p-1">
+          <h2 class="display-4 fw-bold text-dark splash-header">Welcome to the <br/>Portland Backyard Gleaners Resource</h2>
+          <p class="fs-4 splash-header"><em>Promoting waste not want not!</em></p>
+        </div>
+        <div class="row g-1">
+          <div class="col-md-6">
+          <a class="icon-link" asp-controller="Gardeners" asp-action="History">
+            Discover more about the history of gleaning!
+          <svg class="bi"><use xlink:href="#chevron-right"/></svg></a>
+          </div>
+          <div class="col-md-6">
+          <p class="fs-6">Create a free account to become a host and share your garden using the Sign-up button above! Already have an account! Login to manage your backyard.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-      <p class="fs-6">Create a free account to become a host and share your garden using the Sign-up button above! Already have an account! Login to manage your backyard.</p>
-      </div>
     </div>
-
   </div>
-</div>
-<img src="/img/applebanner.jpeg" class="splash" width="100%" height=""/>
+</body>
 
 @* chevron practice for arrow! *@
 
