@@ -178,6 +178,8 @@ No known bugs as of 07/24/23
 * 8:16: Research migrating search function to use navbar instead of opening View
 * 4:30: Looking into Hosting on a Azure, Render
 
+[Back to Top](#backyard-gleaners)
+
 ## [MIT](https://opensource.org/license/mit/) License 
 
 Copyright © 2023 Eusebie Siebenberg

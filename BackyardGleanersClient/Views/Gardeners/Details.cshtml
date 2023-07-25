@@ -28,6 +28,17 @@
 		<div class="col-10 col-sm-8 col-lg-6">
 		<img src=@Model.ProfilePic class="d-block mx-lg-auto img-fluid detail-img" alt="gardener" width="640" height="425" loading="lazy" />
 		</div>
+
+		@* comment box experiment *@
+		<div class="container d-flex-md">
+		<form>      
+		<p id="alert" class="alertbox"></p>
+		<input type="text" class="form-control" placeholder="Comment" id="text_comment"><br>
+		<button type="submit" id="btn_add_comment" class="btn btn-sm results-button">Add Comment</button><br/>
+		</form>
+		<div id="js-discussion">
+		<ul class="py-1" id="list_comments"></ul>
+		</div>   
 	</div> 
 </div>
 
@@ -57,5 +68,60 @@
     </div>
   </div>
 </div>
+
+@* comment box javascript *@
+
+<script type="text/javascript">
+function $(element) {
+  return document.getElementById(element);
+}
+const alertBox = $("alert");
+let commentSubmit = $("btn_add_comment");
+const commentBox = $("text_comment");
+let commentList = $("list_comments");
+
+commentSubmit.addEventListener(
+  "click",
+  function (e) {
+    e.preventDefault();
+    const d = new Date();
+    let time = d.toLocaleTimeString();
+    let comment = commentBox.value.trim();
+    let newLI = document.createElement("li");
+
+    if (commentBox.value.length > 1) {
+      $("alert").innerText = "";
+      comment = `<p class="comment">${comment}</p><p class="date"><b>Posted on: ${time}</b></p>`;
+      newLI.innerHTML = comment;
+      commentList.appendChild(newLI);
+      fadeOut(newLI);
+      commentBox.value = "";
+    } else {
+      $("alert").innerText = "Please enter a comment!";
+    }
+  },
+  false
+);
+
+function fadeOut(element) {
+  element.style.background = "green";
+  var opacity = 1,
+    fps = 90;
+  function decrease() {
+    opacity -= 0.05;
+    if (opacity <= 0.4) {
+      // complete
+      element.style.background = "";
+      element.style.opacity = 1;
+      return true;
+    }
+    element.style.opacity = opacity;
+    setTimeout(decrease, fps);
+  }
+  decrease();
+}
+</script>
+
+
 
 
