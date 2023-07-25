@@ -69,6 +69,7 @@ public class GardenersController : ControllerBase
   public async Task<ActionResult<Gardener>> Post([FromBody] Gardener gardener)
   {
     _db.Gardeners.Add(gardener);
+    gardener.ProfilePic = "/img/tombackground.jpeg";
     await _db.SaveChangesAsync();
     return CreatedAtAction(nameof(GetGardener), new { id = gardener.GardenerId }, gardener);
   }

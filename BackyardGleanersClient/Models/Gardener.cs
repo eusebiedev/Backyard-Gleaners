@@ -12,7 +12,7 @@ public class Gardener
   public string Availability {get; set; }
   public string Location { get; set; }
   public string Contact { get; set; }
-  public string ProfilePic { get; set; } 
+  public string ProfilePic { get; set; }
 
   public static List<Gardener> GetGardeners()
   {

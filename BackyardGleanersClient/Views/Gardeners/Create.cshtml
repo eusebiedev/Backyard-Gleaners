@@ -3,18 +3,22 @@
 }
 
 @model BackyardGleanersClient.Models.Gardener;
-
+<body id="splash-main">
 <main class="my-5">
-  <div class="container col-xl-10 col-xxl-8 px-4 py-5 shadow-lg bg-light rounded-3">
+  <div class="container col-xl-10 col-xxl-8 px-5 py-4 shadow-lg bg-light rounded-3">
     <div class="row align-items-center g-lg-5">
       <div class="col-lg-7 text-center text-lg-start">
         <h1 class="display-8 fw-bold lh-1 text-body-emphasis mb-3">Thanks for contributing to Backyard Gleaners!</h1>
-        <p class="col-lg-10 fs-4">Please fill out our form to create your profile and share your garden with the community:</p>
+        <p class="col-lg-10 fs-6">Please fill out our form to create your profile and share your garden with the community.
+        <ul>
+          <li>Send us a picture of your garden to use for your Profile once completed! After that we'll add you to our custom PDX Gleaner's Google map as well.</li>
+        </ul>
+        </p>
       </div>
-			<div class="col-md-10 col-lg-5 mx-auto py-1 text-light bg-success rounded">
+			<div class="col-md-10 col-lg-5 py-2 g-5 text-dark rounded">
         @using (Html.BeginForm())
         {
-          <form class="p-4 p-md-5 rounded-3 bg-body-tertiary">
+          <form class="p-4 p-md-5">
           <div class="form mb-3">
           @Html.LabelFor(model => model.Name, new { @class = "form-label" } )
           @Html.TextBoxFor(model => model.Name, new { @class = "form-control", @required = "required"})
@@ -39,13 +43,6 @@
           @Html.LabelFor(model => model.Contact, new { @class = "form-label"} )
           @Html.TextBoxFor(model => model.Contact, new { @class = "form-control", @required = "required"})
           </div>
-            @* @if (!string.IsNullOrEmpty(Model.ProfilePic))
-            {
-            <div class="form mb-3">
-						<label class="form-label">Profile Picture</label>
-						<img src="@Model.ProfilePic" alt="Profile Picture" class="d-block mx-lg-auto img-fluid detail-img" width="640" height="425" loading="lazy" />
-						</div>
-            } *@
           <input type="submit" value="Save Profile" class="btn btn-info btn-sm results-button"/>
           </form>
         }				
@@ -53,3 +50,4 @@
 		</div>
   </div>
 </main>
+</body>

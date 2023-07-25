@@ -20,6 +20,8 @@ public class GardenersController : Controller
   }
   public ActionResult Create()
   {
+    Gardener gardener = new Gardener();
+    gardener.ProfilePic = "/img/tombackground.jpeg";
     return View();
   }
 
@@ -27,6 +29,7 @@ public class GardenersController : Controller
   public ActionResult Create(Gardener gardener)
   {
     Gardener.Post(gardener);
+    gardener.ProfilePic = "/img/tombackground.jpeg";
     return RedirectToAction("Index");
   }
 

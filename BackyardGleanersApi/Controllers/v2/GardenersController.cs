@@ -2,7 +2,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using BackyardGleanersApi.Models;
 
-
 namespace BackyardGleanersApi.Controllers;
 
 [ApiController] 
@@ -70,6 +69,7 @@ public class GardenersController : ControllerBase
   public async Task<ActionResult<Gardener>> Post([FromBody] Gardener gardener)
   {
     _db.Gardeners.Add(gardener);
+    gardener.ProfilePic = "/img/tombackground.jpeg";
     await _db.SaveChangesAsync();
     return CreatedAtAction(nameof(GetGardener), new { id = gardener.GardenerId }, gardener);
   }
@@ -123,14 +123,8 @@ public class GardenersController : ControllerBase
     return _db.Gardeners.Any(e => e.GardenerId == id);
   }
 
-  // [HttpGet("Search")] //create a search by anything maybe, extend the arguements(string food, string location) etc
-  // public ActionResult<Gardener> SearchGardenersByFood(string food)
-  // {
-  //   var gardeners = _db.Gardeners.Where(g => g.Food.Contains(food)).ToList();
-  //   return Ok(gardeners);
-  // }
+[HttpGet("Search")]
 
-  [HttpGet("Search")]
 public ActionResult<IEnumerable<Gardener>> SearchGardeners(string food, string location)
 {
     IQueryable<Gardener> query = _db.Gardeners;
