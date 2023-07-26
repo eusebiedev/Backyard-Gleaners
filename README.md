@@ -189,6 +189,7 @@ No known bugs as of 07/24/23
 * 9:14: Azure Deployment in progress
 * 10:47: Azure deployment success, after encountering Region error when selecting West US(2 or 3) when creating Web App, selecting default East US, deployed without error. moving to connecting database
 * 12:00: Deployed Web App to Azure, waiting on live server status 
+* 4:22: WIP progress since lunch, troubleshooting 404 from Azure
 
 [Back to Top](#backyard-gleaners)
 
