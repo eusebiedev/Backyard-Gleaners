@@ -2,17 +2,17 @@
 		ViewData["Title"] = "Delete";
 }
 
+@model BackyardGleanersClient.Models.Gardener;
+
 <body id="delete-profile">
 <main class="my-3 py-3 delete-form w-100 bg-light rounded">
-  <form>
-    <h1 class="h3 mb-3 fw-normal">Are you sure you want to delete @Model.Name? This action cannot be undone!</h1>
-    <div class="form-floating">
-			@using (Html.BeginForm())
-			{
-				<input type="submit" value="Delete" class="btn btn-info btn-sm results-button w-100 py-2"/>
-			}
-    </div>
-  </form>
+  <h1 class="h3 mb-3 fw-normal">Are you sure you want to delete @Model.Name? This action cannot be undone!</h1>
+  <div class="form-floating">
+    @using (Html.BeginForm())
+    {
+      <input type="submit" value="Delete" class="btn btn-info btn-sm results-button w-100 py-2"/>
+    }
+  </div>
 </main>
 </body>
 

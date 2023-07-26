@@ -1,4 +1,3 @@
-using System.Threading.Tasks;
 using RestSharp;
 using Microsoft.AspNetCore.Mvc;
 
