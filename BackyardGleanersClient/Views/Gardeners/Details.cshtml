@@ -30,21 +30,22 @@
 		<div class="col-10 col-sm-8 col-lg-6">
 		<img src=@Model.ProfilePic class="d-block mx-lg-auto img-fluid detail-img" alt="gardener" width="640" height="425" loading="lazy" />
 		</div>
-    <p>@Html.ActionLink("Delete Gardener", "Delete", new { id = @Model.GardenerId})</p>
 
 		@* comment box experiment *@
-		<div class="container d-flex-md">
-		<form>      
-		<p id="alert" class="alertbox"></p>
-		<input type="text" class="form-control" placeholder="Comment" id="text_comment"><br>
-		<button type="submit" id="btn_add_comment" class="btn btn-sm results-button">Add Comment</button><br/>
-		</form>
-		<div id="js-discussion">
-		<ul class="py-1" id="list_comments"></ul>
-		</div>   
-	</div> 
+<div class="container d-flex-md">
+	<form>      
+  <p id="alert" class="alertbox"></p>
+  <input type="text" class="form-control" placeholder="Comment" id="text_comment"><br>
+  <button type="submit" id="btn_add_comment" class="btn btn-sm results-button">Add Comment</button><br/>
+  </form>
+  <div id="js-discussion">
+  <ul class="py-1" id="list_comments"></ul>
+  </div>   
+</div> 
+  <div>
+  <button class="del-profile btn btn-sm text-light rounded-pill results-button">@Html.ActionLink("Delete Profile", "Delete", new { id = @Model.GardenerId})</button>
+  </div>
 </div>
-
 
 <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
   <div class="modal-dialog">

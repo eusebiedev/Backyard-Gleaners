@@ -133,6 +133,15 @@ html {
   border: none;
 }
 
+.del-profile a {
+  text-decoration:none;
+  border-radius: 2em;
+  background-color: teal;
+  color: #ffffff;
+  padding: 0.5em 1.5em;
+
+}
+
 /* navbar toggle animation experiment */
 /* Icon 1 */
 
