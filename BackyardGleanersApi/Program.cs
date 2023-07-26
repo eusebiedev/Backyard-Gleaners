@@ -2,9 +2,6 @@ using BackyardGleanersApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
-using Microsoft.AspNetCore.Identity;
-
-
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,10 +15,6 @@ builder.Services.AddDbContext<BackyardGleanersApiContext>(
                   )
                 )
               );
-
-
-
-
 
 builder.Services.AddApiVersioning(opt =>
                                     {
@@ -63,8 +56,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseStaticFiles();
 app.UseHttpsRedirection();
-app.UseAuthentication();
-app.UseAuthorization();
+// app.UseAuthentication();
+// app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
