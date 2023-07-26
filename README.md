@@ -180,6 +180,13 @@ No known bugs as of 07/24/23
 #### Tuesday 7/25
 * 11:55: WIP: Adding Identity is causing many issues, may have to add to stretch goal
 
+#### Wednesday 7/26
+* 8:22: Plan for today:
+    * Work through setting up hosting on Microsoft Azure
+    * Try to debug account creation which was breaking the app 
+    * Add 'People We Like' / Resources page
+    * Add improved unified style/possible css animation to About view
+
 [Back to Top](#backyard-gleaners)
 
 ## [MIT](https://opensource.org/license/mit/) License 
