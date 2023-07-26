@@ -186,6 +186,7 @@ No known bugs as of 07/24/23
     * Try to debug account creation which was breaking the app 
     * Add 'People We Like' / Resources page
     * Add improved unified style/possible css animation to About view
+* 9:14: Azure Deployment in progress
 
 [Back to Top](#backyard-gleaners)
 
