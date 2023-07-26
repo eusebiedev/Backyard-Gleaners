@@ -187,6 +187,7 @@ No known bugs as of 07/24/23
     * Add 'People We Like' / Resources page
     * Add improved unified style/possible css animation to About view
 * 9:14: Azure Deployment in progress
+* 10:47: Azure deployment success, moving to connecting database
 
 [Back to Top](#backyard-gleaners)
 
