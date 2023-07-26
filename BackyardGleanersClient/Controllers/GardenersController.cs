@@ -92,4 +92,9 @@ public class GardenersController : Controller
   {
     return View();
   }
+  
+  public ActionResult Resources ()
+  {
+    return View();
+  }
 }
