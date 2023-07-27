@@ -97,4 +97,8 @@ public class GardenersController : Controller
   {
     return View();
   }
+  public ActionResult Contact ()
+  {
+    return View();
+  }
 }
