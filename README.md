@@ -194,6 +194,7 @@ No known bugs as of 07/24/23
 #### Thursday 7/27 Presentation Day!
 * 9:00: WIP, setting up an Azure Web App service for my MVC Client side
 * 9:42: Polishing styles, working on Azure
+* 10:16: Deployed Client side, waiting for results
 
 [Back to Top](#backyard-gleaners)
 
