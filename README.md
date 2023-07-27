@@ -195,6 +195,7 @@ No known bugs as of 07/24/23
 * 9:00: WIP, setting up an Azure Web App service for my MVC Client side
 * 9:42: Polishing styles, working on Azure
 * 10:16: Deployed Client side, waiting for results
+* 1:43: Azure client side deployment issues, may move to Render for front end.
 
 [Back to Top](#backyard-gleaners)
 
