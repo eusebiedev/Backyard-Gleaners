@@ -191,6 +191,9 @@ No known bugs as of 07/24/23
 * 12:00: Deployed Web App to Azure, waiting on live server status 
 * 4:22: WIP progress since lunch, troubleshooting 404 from Azure
 
+#### Thursday 7/27 Presentation Day!
+* 9:00: WIP, setting up an Azure Web App service for my MVC Client side
+
 [Back to Top](#backyard-gleaners)
 
 ## [MIT](https://opensource.org/license/mit/) License 
