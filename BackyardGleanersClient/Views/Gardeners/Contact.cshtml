@@ -8,6 +8,8 @@
       <div class="col-lg-6 text-lg-start">
         <h1 class="display-6 fw-bold lh-1 text-body-emphasis mb-1">Get in touch!</h1>
       </div>
+			<div style="width:180px"><iframe allow="fullscreen" frameBorder="0" height="280" src="https://giphy.com/embed/lttzw7C900LaDDHw1F/video" width="280"></iframe>
+			</div>
 			<div class=" col-l">
 				<div class="mb-3">
 					<label for="contact" class="form-label">Email address</label>
@@ -17,5 +19,23 @@
 				<label for="contacttext" class="form-label">Message</label>
 				<textarea class="form-control" id="contacttext" rows="3"></textarea>
 			</div>
+			<input type="submit" value="Send" class="btn btn-primary btn-sm results-button" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-whatever=""/>
+			</div>
+		<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="contactModalLabel"></h1>
+					<button type="button" class="btn-close btn-sm results-button" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					This is a test. This is only a test. Thanks for thinking of us though. We appreciate it!
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary btn-sm results-button" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
 	</div>
 </main>
+
