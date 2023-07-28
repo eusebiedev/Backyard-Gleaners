@@ -2,14 +2,15 @@
 
 ### By Eusebie Siebenberg
 
-#### Independent Capstone Project @ Epicodus. A Gleaners App built around a custom API and MVC Client Front End, with Google Maps integration
+#### Hosted live on Render, compatible with mobile devices: [Backyard Gleaners](https://backyard-gleaners.onrender.com/)
+
+#### Independent Capstone Project @ Epicodus. A Gleaners App built around a custom API and MVC Client Front End, with Google Maps integration, Microsoft Azure/Docker, Render
 
 [API Usage](#using-this-api)
 
 ## Technologies Used
 
-* C#
-* .NET
+* C#/.NET 6
 * ASP.NET CORE
 * MVC API Client Front End
 * Entity Framework Core
@@ -21,12 +22,15 @@
 * Google MyMaps Integration, Google Icons
 * Bootstrap
 * Microsoft Azure API Hosting
+* Render Web Services
+* Microsoft Docker
 
 ## Description 
 
-A website for local backyard gardeners with food surplus to connect with community members to distribute foods: Gleaning is simply harvesting extra crops from gardens, or farms, to provide to anyone in need. Users can learn about becoming a gardening host, a Gleaner, and how to volunteer to assist with food surplus distribution within their city. Discover the benefits, history and facts about gleaning. Additionaly, user will have a full page map view of pinned gardeners location, ability to create a gardeners profile, and search for specific food resources by type and location.
+A website for local backyard gardeners with food surplus to connect with community members to distribute foods: Gleaning is simply harvesting extra crops from gardens, or farms, to provide to anyone in need. Users can learn about becoming a gardening host, a Gleaner, and how to volunteer to assist with food surplus distribution within their city. Discover the benefits, history and facts about gleaning. Additionally, user will have a full page map view of pinned gardeners location, ability to create a gardeners profile, and search for specific food resources by type and location.
 
 ## Setup/Installation Requirements
+    This website is also hosted live on Render, click on the link shared above!
 
 1. Open your shell of choice (e.g., Terminal or GitBash) and run these commands in order:
     * Clone this repository with $ `git clone https://github.com/eusebiedev/Backyard-Gleaners.git`
@@ -201,17 +205,20 @@ No known bugs as of 07/24/23
 #### Friday 7/28
 * Looking into hosting MVC Client side on Render
 * 2:08: Troubleshooting Render deployment
+* 3:41: Render Hosting Success for MVC! It's live!
 
 [Back to Top](#backyard-gleaners)
 
-## [MIT](https://opensource.org/license/mit/) License 
+## License 
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
 
 Copyright © 2023 Eusebie Siebenberg
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Permission is hereby granted to:
+  * Share — copy and redistribute the material in any medium or format
+  * Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+  * NonCommercial — You may not use the material for commercial purposes.
+  * NoDerivatives — If you remix, transform, or build upon the material, you may not distribute the modified material.
 
 If you have any questions, comments, or concerns, please reach out to me at: siebenee@gmail.com
