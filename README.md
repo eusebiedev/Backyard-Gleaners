@@ -200,6 +200,7 @@ No known bugs as of 07/24/23
 
 #### Friday 7/28
 * Looking into hosting MVC Client side on Render
+* 2:08: Troubleshooting Render deployment
 
 [Back to Top](#backyard-gleaners)
 
