@@ -144,7 +144,7 @@ SEARCH /api/v2/garderers/search?{}={}
 
 ## Known Bugs
 
-No known bugs as of 07/24/23
+No known bugs as of 07/28/23
 
 ### Research & Planning Log:
 #### Friday 7/7
@@ -211,14 +211,14 @@ No known bugs as of 07/24/23
 
 ## License 
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
 Copyright © 2023 Eusebie Siebenberg
 
 Permission is hereby granted to:
   * Share — copy and redistribute the material in any medium or format
+  * Adapt — remix, transform, and build upon the material
   * Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
   * NonCommercial — You may not use the material for commercial purposes.
-  * NoDerivatives — If you remix, transform, or build upon the material, you may not distribute the modified material.
 
 If you have any questions, comments, or concerns, please reach out to me at: siebenee@gmail.com
