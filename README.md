@@ -20,6 +20,7 @@
 * Rest Sharp
 * Google MyMaps Integration, Google Icons
 * Bootstrap
+* Microsoft Azure API Hosting
 
 ## Description 
 
@@ -196,6 +197,9 @@ No known bugs as of 07/24/23
 * 9:42: Polishing styles, working on Azure
 * 10:16: Deployed Client side, waiting for results
 * 1:43: Azure client side deployment issues, may move to Render for front end.
+
+#### Friday 7/28
+* Looking into hosting MVC Client side on Render
 
 [Back to Top](#backyard-gleaners)
 
