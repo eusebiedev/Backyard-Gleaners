@@ -2,9 +2,9 @@
 
 ### By Eusebie Siebenberg
 
-#### Hosted live on Render, compatible with mobile devices: [Backyard Gleaners](https://backyard-gleaners.onrender.com/)
+Hosted live on Render, compatible with mobile devices: [Backyard Gleaners](https://backyard-gleaners.onrender.com/)
 
-#### Independent Capstone Project @ Epicodus. A Gleaners App built around a custom API and MVC Client Front End, with Google Maps integration, Microsoft Azure/Docker, Render
+Independent Capstone Project @ Epicodus. A Gleaners App built around a custom API and MVC Client Front End, with Google Maps integration, Microsoft Azure/Docker, Render
 
 [API Usage](#using-this-api)
 
