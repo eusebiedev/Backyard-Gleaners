@@ -25,6 +25,10 @@ Independent Capstone Project @ Epicodus. A Gleaners App built around a custom AP
 * Render Web Services
 * Microsoft Docker
 
+## Stretch Goals (in developement)
+* authO integration for user accounts/profile creation
+* Disqus for commenting on profiles
+
 ## Description 
 
 A website for local backyard gardeners with food surplus to connect with community members to distribute foods: Gleaning is simply harvesting extra crops from gardens, or farms, to provide to anyone in need. Users can learn about becoming a gardening host, a Gleaner, and how to volunteer to assist with food surplus distribution within their city. Discover the benefits, history and facts about gleaning. Additionally, user will have a full page map view of pinned gardeners location, ability to create a gardeners profile, and search for specific food resources by type and location.
