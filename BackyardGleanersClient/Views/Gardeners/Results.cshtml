@@ -4,7 +4,20 @@
 
 @model List<BackyardGleanersClient.Models.Gardener>
 
-	@if (Model != null && Model.Count > 0)
+	<div class="container">
+		<div class="mb-4 bg-body-tertiary rounded-3 bg-light"> 
+			<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
+				<div class="my-3 p-1">
+				<h1 class="display-6 fw-bold lh-1 text-body-emphasis">API in Development! Stay tuned :)</h1>
+				
+				</div>
+			</div>
+		<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-3">
+	
+		</div>
+	</div>
+
+	<!-- @if (Model != null && Model.Count > 0)
 	{
 		@foreach (var gardener in Model)
 		{
@@ -26,4 +39,4 @@
 	else
 	{
 		<p>No gardeners found based on the search query.</p>
-	}
+	} -->
