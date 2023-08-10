@@ -8,8 +8,8 @@ public class GardenersController : Controller
 {
   public IActionResult Index()
   {
-    List<Gardener> gardeners = Gardener.GetGardeners();
-    return View(gardeners);
+    // List<Gardener> gardeners = Gardener.GetGardeners();
+    return View();
   }
 
   public IActionResult Details(int id)
