@@ -148,7 +148,7 @@ SEARCH /api/v2/garderers/search?{}={}
 
 ## Known Bugs
 
-No known bugs as of 07/28/23
+* 08/10/23: Working thru possibly migrating database from Azure to another service. API is shut down for now. In development
 
 ### Research & Planning Log:
 #### Friday 7/7
