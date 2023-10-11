@@ -1,70 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>@ViewData["Title"] Backyard Gleaners</title>
-	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-	<link rel="stylesheet" href="~/BackyardGleanersClient.styles.css" asp-append-version="true" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@ViewData["Title"] Backyard Gleaners</title>
+  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/BackyardGleanersClient.styles.css" asp-append-version="true" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
 
 </head>
+
 <body style="padding-top:3rem;">
-<header>
-	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" aria-label="">
-    <div class="container-xl">
-      <a class="navbar-brand nav-link fw-bold" asp-controller="Home" asp-action="Index">Backyard Gleaners</a>
-			<button class="navbar-toggler first-button" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarToggleMenu"
-        aria-controls="navbarToggleExternalContent9" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <div class="animated-icon1"><span></span><span></span><span></span></div>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarToggleMenu" style="padding-left: 15px;">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
-          <li class="nav-item">
-            <a class="nav-link active text-light btn btn-sm nav-button rounded-pill" aria-current="Home" asp-controller="Home" asp-action="Index">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light btn btn-sm nav-button rounded-pill" asp-controller="Gardeners" asp-action="Index">Gardeners</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light btn btn-sm nav-button rounded-pill" asp-controller="Gardeners" asp-action="Search">Search</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light btn btn-sm nav-button rounded-pill" asp-controller="Gardeners" asp-action="Map">View Map</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-light btn btn-sm nav-button rounded-pill" href="#" data-bs-toggle="dropdown" aria-expanded="false">Learn More</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item nav-link text-dark fw-bold" asp-controller="Gardeners" asp-action="About">Who We Are</a></li>
-              <li><a class="dropdown-item nav-link text-dark fw-bold" asp-controller="Gardeners" asp-action="History">History</a></li>
-              <li><a class="dropdown-item nav-link text-dark fw-bold" asp-controller="Gardeners" asp-action="Resources">Resources</a></li>
-              <li><a class="dropdown-item nav-link text-dark fw-bold" asp-controller="Gardeners" asp-action="Contact">Contact Us</a></li>
-            </ul>
-          </li>
-          <a class="nav-link btn text-light btn-sm nav-button rounded-pill" asp-controller="Gardeners" asp-action="Create">Share Your Garden</a>
-        </ul>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" aria-label="">
+      <div class="container-xl">
+        <a class="navbar-brand nav-link fw-bold" asp-controller="Home" asp-action="Index">Backyard Gleaners</a>
+        <button class="navbar-toggler first-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleMenu" aria-controls="navbarToggleExternalContent9" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <div class="animated-icon1"><span></span><span></span><span></span></div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggleMenu" style="padding-left: 15px;">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link active text-light btn btn-sm nav-button rounded-pill" aria-current="Home"
+                asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light btn btn-sm nav-button rounded-pill" asp-controller="Gardeners"
+                asp-action="Index">Gardeners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light btn btn-sm nav-button rounded-pill" asp-controller="Gardeners"
+                asp-action="Search">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light btn btn-sm nav-button rounded-pill" asp-controller="Gardeners"
+                asp-action="Map">View Map</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light btn btn-sm nav-button rounded-pill" href="#"
+                data-bs-toggle="dropdown" aria-expanded="false">Learn More</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item nav-link text-dark fw-bold" asp-controller="Gardeners"
+                    asp-action="About">Who We Are</a></li>
+                <li><a class="dropdown-item nav-link text-dark fw-bold" asp-controller="Gardeners"
+                    asp-action="History">History</a></li>
+                <li><a class="dropdown-item nav-link text-dark fw-bold" asp-controller="Gardeners"
+                    asp-action="Resources">Resources</a></li>
+                <li><a class="dropdown-item nav-link text-dark fw-bold" asp-controller="Gardeners"
+                    asp-action="Contact">Contact Us</a></li>
+              </ul>
+            </li>
+            <!-- <a class="nav-link btn text-light btn-sm nav-button rounded-pill" asp-controller="Gardeners" asp-action="Create">Share Your Garden</a> -->
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
-<div class="container-fluid">
-  <main role="main" class="p-3">
-    @RenderBody()
-  </main>
-</div>
-	<script src="~/lib/jquery/dist/jquery.min.js"></script>
-	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="~/js/site.js" asp-append-version="true"></script>
-	@await RenderSectionAsync("Scripts", required: false)
+    </nav>
+  </header>
+  <div class="container-fluid">
+    <main role="main" class="p-3">
+      @RenderBody()
+    </main>
+  </div>
+  <script src="~/lib/jquery/dist/jquery.min.js"></script>
+  <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="~/js/site.js" asp-append-version="true"></script>
+  @await RenderSectionAsync("Scripts", required: false)
 
   @* navbar toggle animation experiment *@
-	<script type="text/javascript">
-	document.querySelector('.first-button').addEventListener('click', function () {
-	document.querySelector('.animated-icon1').classList.toggle('open');
-	});
-	</script>
+  <script type="text/javascript">
+    document.querySelector('.first-button').addEventListener('click', function () {
+      document.querySelector('.animated-icon1').classList.toggle('open');
+    });
+  </script>
 </body>
+
 </html>
