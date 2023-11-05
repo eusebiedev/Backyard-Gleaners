@@ -4,14 +4,16 @@
 
 Hosted live on Render, compatible with mobile devices: [Backyard Gleaners](https://backyard-gleaners.onrender.com/)
 
-- API migration in progress. I may hardcode the database to avert the migration.
 - Render's free service has server downtime. So the site may take a few extra seconds to load! I appreciate the patience.
+- WIP: API not in use at this time. Hardcoding database, improve search functionality, improving design system across site
 
-Independent Capstone Project @ Epicodus. A Gleaners App built around a custom API and MVC Client Front End, with Google Maps integration, Microsoft Azure/Docker, Render
+## Description
+* Independent Capstone Project @ Epicodus. A Gleaners App built around a custom API and MVC Client Front End, with Google Maps integration, Docker, Render
 
-[API Usage](#using-this-api)
 
-## Technologies Used
+A website for local backyard gardeners with food surplus to connect with community members to distribute foods: Gleaning is simply harvesting extra crops from gardens, or farms, to provide to anyone in need. Users can learn about becoming a gardening host, a Gleaner, and how to volunteer to assist with food surplus distribution within their city. Discover the benefits, history and facts about gleaning. Additionally, user will have a full page map view of pinned gardeners location, ability to create a gardeners profile, and search for specific food resources by type and location.
+
+## Technologies Used (past and present)
 
 - C#/.NET 6
 - ASP.NET CORE
@@ -33,128 +35,18 @@ Independent Capstone Project @ Epicodus. A Gleaners App built around a custom AP
 - authO integration for user accounts/profile creation
 - Disqus for commenting on profiles
 
-## Description
+## Setup/Installation Requirements 
+* (API/MySQL Instructions removed for now, Database is hardcoded.)
 
-A website for local backyard gardeners with food surplus to connect with community members to distribute foods: Gleaning is simply harvesting extra crops from gardens, or farms, to provide to anyone in need. Users can learn about becoming a gardening host, a Gleaner, and how to volunteer to assist with food surplus distribution within their city. Discover the benefits, history and facts about gleaning. Additionally, user will have a full page map view of pinned gardeners location, ability to create a gardeners profile, and search for specific food resources by type and location.
-
-## Setup/Installation Requirements
-
-    This website is also hosted live on Render, click on the link shared above!
-
-1. Open your shell of choice (e.g., Terminal or GitBash) and run these commands in order:
-   - Clone this repository with $ `git clone https://github.com/eusebiedev/Backyard-Gleaners.git`
-   - Open in your favorite IDE, navigate to the root directory of this project `BackyardGleaners.Solution`, Create a `.gitignore` file with $ `touch .gitignore`, copy/paste this into the .gitignore file:
-     ```
-     bin
-     obj
-     appsettings.json
-     appsettings.*.json
-     ```
-2. `API Setup`: Navigate to this project's API directory called `BackyardGleanersApi` with $ `cd BackyardGleanersApi`
-   _ create a new file called appsettings.json with $ `touch appsettings.json`, copy/paste this into the file, replacing `uid` and `pwd` with your own values for using MySQL Workbench.
-   (remove square brackets when inputting your details):
-   ```
-   {
-   "Logging": {
-   "LogLevel": {
-   "Default": "Information",
-   "Microsoft.AspNetCore": "Warning"
-   }
-   },
-   "AllowedHosts": "_",
-   "ConnectionStrings": {
-   "DefaultConnection": "Server=localhost;Port=3306;database=backyard_gleaners_api;uid=root;pwd=epicodus;"
-   }
-   }
-   ``    * create another file called appsettings.Development.json with $ `touch appsettings.Development.json`, copy/paste the following code:
-     ``
-   {
-   "Logging": {
-   "LogLevel": {
-   "Default": "Information",
-   "Microsoft": "Trace",
-   "Microsoft.AspNetCore": "Information",
-   "Microsoft.Hosting.Lifetime": "Information"
-   }
-   }
-   }
-   ```
-3. `Database Setup`: Within the `BackyardGleanersApi` directory, run $ `dotnet ef database update` to generate the database. Open your copy of MySQL Workbench, click on the `Navigator > Schemas`, right-click and select `Refresh All`, you should see your new BackyardGleanersApi database.
-
-4. `MVC Client Setup`: Navigate to this project's Client directory called `BackyardGleanersClient` with $ `cd BackyardGleanersClient`
-   - create a new file called appsettings.json with $ `touch appsettings.json`, copy/paste this into the file:
-     ```
-     {
-       "Logging": {
-         "LogLevel": {
-           "Default": "Information",
-           "Microsoft.AspNetCore": "Warning"
-         }
-       },
-       "AllowedHosts": "*"
-     }
-     ```
-   - create another file called appsettings.Development.json with $ `touch appsettings.Development.json`, copy/paste the following code:
-     ```
-     {
-       "Logging": {
-         "LogLevel": {
-           "Default": "Information",
-           "Microsoft.AspNetCore": "Warning"
-         }
-       }
-     }
-     ```
-5. To use this app, both the API and MVC must be running. After following the instructions outlined above:
-   - Start the API First using $ `dotnet run` from within the BackyardGleanersApi directory
-   - Then start the Client using $ `dotnet watch run` from within the BackyardGleanersClient directory. This command will launch the application in your browser!
-
-## Using This Api
-
-#### To test routes in Swagger:
-
-- In your terminal, navigate to the BackyardGleanersApi directory and run `dotnet watch run`
-- In your broswer, open https://localhost:5001/swagger/index.html
-- Use the GUI to navigate the API and test the endpoints
-- `API Versioning` is enabled, which defaults to API v2 when Swagger opens. Simply use the Swagger `Select a definition` drop down options list to select API v1. Versioning is important because when we make breaking changes in the future, we can push these changes to a new version, and retain an original version for enterprises that can't update to Version 2 just yet.
-
-#### To test routes in Postman:
-
-- Make sure that Postman API Platform is downloaded to your device
-- Start a new request by clicking the + at the top of the window
-- Copy and paste any of the below listed end point links into the text bar that says 'Enter URL or paste text'
-- Make sure the method to the left of the text box matches the method described for the endpoint you are testing
-- If route requires a body, navigate to the body window just below the text box
-- Copy and paste the body code listed above and replace fields with their respective values
-- Click send and wait for response at the bottom of the window
-- To access API v1 in Postman: `https://localhost:5001/api/v1/gardeners/`
-- To access API v2 in Postman: `https://localhost:5001/api/v2/gardeners/`
-
-## Api Endpoints
-
-```
-Endpoints:
-GET /api/v2/gardeners/
-GET /api/v2/gardeners/{id}
-POST /api/v2/gardeners/
-PUT /api/v2/gardeners/{id}
-DELETE /api/v2/gardeners/{id}
-SEARCH /api/v2/garderers/search?{}={}
-```
-
-## Example URLs for Requests on Gardeners
-
-| Parameter | Type   | Description                                       | Sample Url                                                 |
-| --------- | ------ | ------------------------------------------------- | ---------------------------------------------------------- |
-| Gardeners | List   | Returns a list of all gardeners in database       | https://localhost:5001/api/v2/gardeners                    |
-| Name      | String | Returns a garderner with matching name            | https://localhost:5001/api/v2/Gardeners?name=Cherry%20Bark |
-| Food      | String | Returns a gardener with matching food surplus     | https://localhost:5001/api/v2/Gardeners?food=cherries      |
-| Search    | Query  | Returns a gardener with matching food or location | https://localhost:5001/api/v2/Gardeners/Search?location=se |
-
-#### API endpoints for Post, Put, Delete will be limited to user accounts in the future.
+1. Clone this repository
+2. Navigate to the client directory using `cd BackyardGleanersClient`
+3. Run `dotnet watch run` to use the app locally
+4. Optionally visit the site hosted on Render, link above.
+5. Feel free to explore the BackyardGleanersApi code, although it is not in use at this time.
 
 ## Known Bugs
 
+- 11/05/23: WIP Search functionality
 - 08/10/23: Working thru possibly migrating database from Azure to another service. API is shut down for now. In development
 
 ### Research & Planning Log:
