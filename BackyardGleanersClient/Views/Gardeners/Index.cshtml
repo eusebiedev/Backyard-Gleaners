@@ -1,19 +1,43 @@
 @{
-    ViewData["Title"] = "Gardeners";
+ViewData["Title"] = "Gardeners";
 }
 
 @using BackyardGleanersClient.Models;
 
-<div class="container">
-  <div class="mb-4 bg-body-tertiary rounded-3 bg-light"> 
+<!-- <div class="container">
+	<div class="mb-4 bg-body-tertiary rounded-3 bg-light">
 		<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
 			<div class="my-3 p-1">
-			<h1 class="display-6 fw-bold lh-1 text-body-emphasis">API in Development! Stay tuned :)</h1>
-			
+				<h1 class="display-6 fw-bold lh-1 text-body-emphasis">API in Development! Stay tuned :)</h1>
+
 			</div>
 		</div>
-  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-3">
+		<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-3">
 
-  </div>
+		</div>
+	</div> -->
+
+<div class="container">
+	<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-3">
+
+		<div class="col">
+			<div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+				<img src="../img/tomatoes.jpeg" class="" alt="gardener">
+				<div class="card-body">
+					<h5 class="card-title"> <strong>Eusebie and Kate</strong></h5>
+					<a class="btn btn-sm results-button" asp-controller="Gardeners" asp-action="Tomatoes">View Gardener</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+				<img src="../img/strawberry.jpeg" class="" alt="gardener">
+				<div class="card-body">
+					<h5 class="card-title"> <strong>Berry Sweetwater</strong></h5>
+					<a class="btn btn-sm results-button" asp-controller="Gardeners" asp-action="Strawberries">View Gardener</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
 </div>
-

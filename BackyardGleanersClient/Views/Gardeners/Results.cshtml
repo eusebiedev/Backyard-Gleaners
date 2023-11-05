@@ -1,19 +1,40 @@
-@{  
-	ViewData["Title"] = "Results";
+@{
+ViewData["Title"] = "Results";
 }
 
-@model List<BackyardGleanersClient.Models.Gardener>
+@model List<BackyardGleanersClient.Models.Gardener>;
 
 	<div class="container">
-		<div class="mb-4 bg-body-tertiary rounded-3 bg-light"> 
+		<div class="mb-4 bg-body-tertiary rounded-3 bg-light">
 			<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
 				<div class="my-3 p-1">
-				<h1 class="display-6 fw-bold lh-1 text-body-emphasis">API in Development! Stay tuned :)</h1>
-				
+					<h1 class="display-6 fw-bold lh-1 text-body-emphasis">Search Results</h1>
+
+					@if (Model.Any())
+					{
+					<p>Found @Model.Count gardener(s) based on the search query.</p>
+
+					<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-5 py-3">
+						@foreach (var gardener in Model)
+						{
+						<div class="col">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">@gardener.Name</h5>
+									<p class="card-text">Food: @gardener.Food</p>
+									<p class="card-text">Location: @gardener.Location</p>
+									<a class="btn btn-sm results-button" asp-controller="Gardeners" asp-action="@gardener.Food">View Gardener</a>
+								</div>
+							</div>
+						</div>
+						}
+					</div>
+					}
+					else
+					{
+					<p>No gardeners found based on the search query.</p>
+					}
 				</div>
 			</div>
-		<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-3">
-	
 		</div>
 	</div>
-

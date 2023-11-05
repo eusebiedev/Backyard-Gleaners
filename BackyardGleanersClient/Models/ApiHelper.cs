@@ -7,15 +7,14 @@ public class ApiHelper : ControllerBase
 {
   public static async Task<string> GetAll()
   {
-    RestClient client = new RestClient("https://localhost:5001");
+    RestClient client = new RestClient("https://localhost:5003");
     RestRequest request = new RestRequest($"api/v2/gardeners", Method.Get);
     RestResponse response = await client.GetAsync(request);
     return response.Content;
   }
-//  https://backyard-gleaners-app.azurewebsites.net Azure API 
   public static async Task<string> Get(int id)
   {
-    RestClient client = new RestClient("https://localhost:5001");
+    RestClient client = new RestClient("https://localhost:5003");
     RestRequest request = new RestRequest($"api/v2/gardeners/{id}", Method.Get);
     RestResponse response = await client.GetAsync(request);
     return response.Content;

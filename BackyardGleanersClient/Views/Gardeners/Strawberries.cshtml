@@ -1,0 +1,132 @@
+@{
+ViewData["Title"] = "Gardener Details";
+}
+@using BackyardGleanersClient.Models;
+
+<div class="container py-5">
+  <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg bg-light">
+    <div class="col-lg-6">
+      <h1 class="display-6 fw-bold text-body-emphasis lh-1 mb-3">Welcome to Berry Sweetwater's Backyard</h1>
+      <p class="fs-5">
+        Backyard gardener since 2011! My main crop is organic strawberries and there is always a surplus. I can provide
+        a
+        pre-picked basket for pickup. The last 2 years I won biggest, tastiest strawberry at the Oregon Grower's Fair!
+        I've been
+        partnering with our local Portland Zoo to make use of their finest elephant manure, it powers my strawberry
+        patch to its
+        fullest!</p>
+      <div style="font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;">
+        <span class="material-symbols-outlined" style="display: inline-block;">yard</span>
+        <p class="lead" style="display: inline-block;"><strong style="font-variation-settings: 'wght' 600;">From the
+            Garden: </strong>Strawberries</p>
+      </div>
+      <div style="font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;">
+        <span class="material-symbols-outlined" style="display: inline-block;">calendar_month</span>
+        <p class="lead" style="display: inline-block;"><strong
+            style="font-variation-settings: 'wght' 600;">Availability: </strong>June->August, Mon-Fri, 2-6pm</p>
+      </div>
+      <div style="font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;">
+        <span class="material-symbols-outlined" style="display: inline-block;">pin_drop</span>
+        <p class="lead" style="display: inline-block;"><strong style="font-variation-settings: 'wght' 600;">Location:
+          </strong>SW Condor Ave & SW Barbur Blvd, Portland, OR 97239</p>
+      </div>
+      <div style="font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;">
+        <span class="material-symbols-outlined" style="display: inline-block;">mail</span>
+        <p class="lead" style="display: inline-block;"><strong style="font-variation-settings: 'wght' 600;">Contact:
+          </strong>bbsweet@gmail.com</p><br />
+        <button type="button" class="btn btn-sm results-button" data-bs-toggle="modal" data-bs-target="#contactModal"
+          data-bs-whatever="">Get in Touch!</button>
+
+      </div><br />
+    </div>
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="/img/strawberry.jpeg" class="d-block mx-lg-auto img-fluid detail-img" alt="gardener" width="640"
+        height="425" loading="lazy" />
+    </div>
+
+    @* comment box experiment *@
+    <div class="container d-flex-md">
+      <form>
+        <p id="alert" class="alertbox"></p>
+        <input type="text" class="form-control" placeholder="Comment" id="text_comment"><br>
+        <button type="submit" id="btn_add_comment" class="btn btn-sm results-button">Add Comment</button><br />
+      </form>
+      <div id="js-discussion">
+        <ul class="py-1" id="list_comments"></ul>
+      </div>
+    </div>
+    <div>
+      <!-- <button class="del-profile btn btn-sm text-light rounded-pill results-button">@Html.ActionLink("Delete Profile", "Delete", new { })</button> Will be back when i figure out authentication
+  </div> -->
+    </div>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="contactModalLabel"></h1>
+            <button type="button" class="btn-close btn-sm results-button" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            This is a test. This is only a test. Thanks for thinking of us though. We appreciate it!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm results-button" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @* comment box javascript *@
+
+    <script type="text/javascript">
+      function $(element) {
+        return document.getElementById(element);
+      }
+      const alertBox = $("alert");
+      let commentSubmit = $("btn_add_comment");
+      const commentBox = $("text_comment");
+      let commentList = $("list_comments");
+
+      commentSubmit.addEventListener(
+        "click",
+        function (e) {
+          e.preventDefault();
+          const d = new Date();
+          let time = d.toLocaleTimeString();
+          let comment = commentBox.value.trim();
+          let newLI = document.createElement("li");
+
+          if (commentBox.value.length > 1) {
+            $("alert").innerText = "";
+            comment = `<p class="comment">${comment}</p><p class="date"><b>Posted on: ${time}</b></p>`;
+            newLI.innerHTML = comment;
+            commentList.appendChild(newLI);
+            fadeOut(newLI);
+            commentBox.value = "";
+          } else {
+            $("alert").innerText = "Please enter a comment!";
+          }
+        },
+        false
+      );
+
+      function fadeOut(element) {
+        element.style.background = "green";
+        var opacity = 1,
+          fps = 90;
+        function decrease() {
+          opacity -= 0.05;
+          if (opacity <= 0.4) {
+            // complete
+            element.style.background = "";
+            element.style.opacity = 1;
+            return true;
+          }
+          element.style.opacity = opacity;
+          setTimeout(decrease, fps);
+        }
+        decrease();
+      }
+    </script>
