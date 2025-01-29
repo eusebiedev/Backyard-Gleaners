@@ -2,6 +2,8 @@
 
 ### By Eusebie Siebenberg
 
+Currently in the process of migrating this application to React and Next.js! Stay tuned!
+
 Hosted live on Render, compatible with mobile devices: [Backyard Gleaners](https://backyard-gleaners.onrender.com/)
 
 - Render's free service has server downtime. So the site may take a few extra seconds to load! I appreciate the patience.
