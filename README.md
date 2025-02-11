@@ -2,7 +2,7 @@
 
 ### By Eusebie Siebenberg
 
-Currently in the process of migrating this application to React and Next.js! Stay tuned!
+Update, 2/11/2025: Process to migrate this app to React and Nextjs is about to start! Stay tuned!
 
 Hosted live on Render, compatible with mobile devices: [Backyard Gleaners](https://backyard-gleaners.onrender.com/)
 
